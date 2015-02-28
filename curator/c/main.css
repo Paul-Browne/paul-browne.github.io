@@ -14,16 +14,16 @@ th[data-sorted]{
 table[data-sortable] th[data-sorted]:after{
     content:"b";
 }
-th[data-sorted="true"][data-sorted-direction="descending"]:after {
+table[data-sortable] th[data-sorted="true"][data-sorted-direction="descending"]:after {
     content:"]";
 }
-th[data-sorted="true"][data-sorted-direction="ascending"]:after {
+table[data-sortable] th[data-sorted="true"][data-sorted-direction="ascending"]:after {
     content:"[";
 }
 th[data-sortable="false"] {
     cursor:default;
 }
-th[data-sortable="false"]:after {
+table[data-sortable] th[data-sortable="false"]:after {
     content:"";
 }
 .table {
