@@ -2,20 +2,24 @@ table {
   max-width: 100%;
   background-color: transparent;
 }
-.sortable th {
+th[data-sorted] {
     cursor:pointer;
 }
-.sortable th:after{
+th[data-sorted]:after{
     font-size:14px;
     content:"b";
     font-family:"iconfont";
     padding-left:12px;
 }
-th.sorting-asc:after {
+th[data-sorted="true"]:after {
     content:"[";
 }
-th.sorting-desc:after {
+th[data-sorted="false"]:after {
     content:"]";
+}
+th[data-sortable="false"]:after {
+    content:"";
+    cursor:default;
 }
 .table {
   width: 100%;
