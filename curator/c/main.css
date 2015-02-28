@@ -24,7 +24,7 @@ th[data-sortable="false"] {
     cursor:default;
 }
 table[data-sortable] th[data-sortable="false"]:after {
-    content:"";
+    content:" ";
 }
 .table {
   width: 100%;
