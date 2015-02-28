@@ -2,14 +2,12 @@ table {
   max-width: 100%;
   background-color: transparent;
 }
-th[data-sorted] {
-    cursor:pointer;
-}
-th[data-sorted="false"]:after{
+th[data-sorted]:after{
     font-size:14px;
     content:"b";
     font-family:"iconfont";
     padding-left:12px;
+    cursor:pointer;
 }
 th[data-sorted="true"][data-sorted-direction="descending"]:after {
     content:"[";
