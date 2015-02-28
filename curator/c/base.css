@@ -64,7 +64,6 @@ em,cite,i,dfn,var,blockquote,address{font-family:'Libre Baskerville',serif;font-
 q:before,q:after{font-size:1.15em}
 q:before{content:'\201c'}
 q:after{content:'\201d'}
-dt{font-weight:400!important}
 dd{margin:0 0 0 2.5em}
 menu,ol,ul{padding: 0 0 0 1.5em}
 ol ol{list-style-type: lower-alpha}
@@ -84,7 +83,7 @@ dl.inline dt,dl.inline dd{display:inline-block}
 dl.inline dt:after{content:";"}
 dl.inline dd:after{content:"."}
 .center-text{text-align:center}
-.thin-text{font-weight:400}
+.thin-text{font-weight:400!important}
 .font-16 p,p.font-16{font-size:16px}
 .justify-text{text-align:justify}
 img.valign{margin-bottom:0.4em;margin-top:0.4em}
