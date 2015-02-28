@@ -11,7 +11,7 @@ table[data-sortable] th:after {
 th[data-sorted]{
     cursor:pointer;
 }
-th[data-sorted]:after{
+table[data-sortable] th[data-sorted]:after{
     content:"b";
 }
 th[data-sorted="true"][data-sorted-direction="descending"]:after {
