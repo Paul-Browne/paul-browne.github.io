@@ -5,16 +5,16 @@ table {
 th[data-sorted] {
     cursor:pointer;
 }
-th[data-sorted]:after{
+th[data-sorted="false"]:after{
     font-size:14px;
     content:"b";
     font-family:"iconfont";
     padding-left:12px;
 }
-th[data-sorted="true"]:after {
+th[data-sorted="true"][data-sorted-direction="descending"]:after {
     content:"[";
 }
-th[data-sorted="false"]:after {
+th[data-sorted="true"][data-sorted-direction="ascending"]:after {
     content:"]";
 }
 th[data-sortable="false"]:after {
