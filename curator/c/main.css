@@ -12,14 +12,16 @@ th[data-sorted]:after{
     padding-left:12px;
 }
 th[data-sorted="true"][data-sorted-direction="descending"]:after {
-    content:"[";
-}
-th[data-sorted="true"][data-sorted-direction="ascending"]:after {
     content:"]";
 }
+th[data-sorted="true"][data-sorted-direction="ascending"]:after {
+    content:"[";
+}
 th[data-sortable="false"] {
-    content:"";
     cursor:default;
+}
+th[data-sortable="false"]:after {
+    content:"";
 }
 .table {
   width: 100%;
