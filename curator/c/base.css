@@ -64,7 +64,7 @@ em,cite,i,dfn,var,blockquote,address{font-family:'Libre Baskerville',serif;font-
 q:before,q:after{font-size:1.15em}
 q:before{content:'\201c'}
 q:after{content:'\201d'}
-dt{font-weight:400}
+dt{font-weight:400!important}
 dd{margin:0 0 0 2.5em}
 menu,ol,ul{padding: 0 0 0 1.5em}
 ol ol{list-style-type: lower-alpha}
