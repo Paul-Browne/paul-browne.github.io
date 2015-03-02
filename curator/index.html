@@ -85,7 +85,45 @@
                 <h4>Grid System</h4>
                 <div data-collapse="accordion">
                 <h5>overview</h5>
-                <p><a href="#">epicGrid</a> controls the layout</p>
+                <div>
+                <p><a href="#">epicGrid</a> controls the layout. With epicGrid there are two types of columns, and two types of "additions" which add other style to the columns</p>
+<table class="table">
+<thead>
+<tr>
+<th>Column types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix-col-x-y</code></td>
+<td>A column for the chosen viewport. X number of columns wide from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-center-x-y</code></td>
+<td>Center the column for that viewport. X number of columns wide from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-offset-x-y</code></td>
+<td>Offset the column to the right by X number of columns from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-left-x-y</code></td>
+<td>Displace a column to the left by X number of columns from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-right-x-y</code></td>
+<td>Displace a column to the right by X number of columns from a total of Y</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>choose one of the prefixes <code>x</code>, <code>s</code>, <code>m</code>, <code>l</code> or <code>h</code> for that viewport</li>
+<li>classes <code>left</code>, <code>right</code> and <code>offset</code> must be accompanied with a <code>col</code> class to specify width.</li>
+<li>the class <code>center</code> cannot be used with <code>left, right or offset</code>, only <code>col</code>.</li>
+</ul>
+                </div>
                 <h5>breakpoints</h5>
                 <div>
                 <p>You can use up to 5 different prefixes to independently control the layout for different sizes</p>
