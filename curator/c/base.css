@@ -135,7 +135,6 @@ a.h4:hover, a.h4:visited:hover {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4  {
   text-rendering: optimizelegibility;
   font-weight: 600;
-  font-style: normal;
   line-height: 1.2
 }
 h1, .h1 {font-size: 2.643em; margin-bottom: 0.5em }
@@ -147,17 +146,6 @@ h6, .h6 {font-size: 0.615em; font-weight: 400 }
 
 /* ===== YOUR STYLES ===== */
 /* ======================= */
-
-
-
-
-#hello-world {
-  color:#fff;
-  background:rgba(0,0,0,0.5);
-  border-radius:12px;
-}
-
-
 
 
 
