@@ -8,7 +8,7 @@ table {
 }
 table[data-sortable] th:after {
     font-size:14px;
-    content:" ";
+    content:"\00a0";
     font-family:"iconfont";
     padding-left:12px;
 }
@@ -28,7 +28,7 @@ th[data-sortable="false"] {
     cursor:default;
 }
 table[data-sortable] th[data-sortable="false"]:after {
-    content:" ";
+    content:"\00a0";
 }
 .table {
   width: 100%;
