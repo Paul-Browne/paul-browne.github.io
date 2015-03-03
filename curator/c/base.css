@@ -93,7 +93,7 @@ img.valign{margin-bottom:0.4em;margin-top:0.4em}
 .fullscreen,.fullheight,.middlize,.vmid,.icovr{overflow:hidden;position:relative;display:block}
 .vmid,.middlize{margin-top:0;margin-bottom:0}
 .middlize{margin:0 auto}
-.icovr>img{position:absolute;max-width:99999}
+.icovr>img{position:absolute;max-width:99999px}
 
 /* ===== PLACEHOLDER STYLES ===== */
 /* ============================== */
