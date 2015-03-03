@@ -54,7 +54,7 @@
             <div data-collapse="accordion">
                 <h5>overview</h5>
                 <div>
-                    <p><a href="#">epicGrid</a> controls the layout. With epicGrid there are two types of columns, and two types of "additions" which add other style to the columns</p>
+                    <p>The grid system is the foundation of the layout. Curator uses <a href="https://github.com/Paul-Browne/epicGrid">epicGrid</a> to handle the this. Unlike most grid systems that are written in CSS, epicGrid is written in pure javascript, which allows greater choice of grid style, more breakpoints and auto clearing of parallel columns - no need to add clearfix containers, which in turn allows for more layout variation between breakpoints.</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -86,14 +86,14 @@
                         </tbody>
                     </table>
                     <ul>
-                        <li>choose one of the prefixes <code>x</code>, <code>s</code>, <code>m</code>, <code>l</code> or <code>h</code> for that viewport</li>
+                        <li>choose one of the prefixes <code>x</code>, <code>s</code>, <code>m</code>, <code>l</code> or <code>h</code> for that viewport, obvoiusly you can use as many as you like, per element.</li>
                         <li>classes <code>left</code>, <code>right</code> and <code>offset</code> must be accompanied with a <code>col</code> class to specify width.</li>
                         <li>the class <code>center</code> cannot be used with <code>left, right or offset</code>, only <code>col</code>.</li>
                     </ul>
                 </div>
                 <h5>breakpoints</h5>
                 <div>
-                    <p>You can use up to 5 different prefixes to independently control the layout for different sizes</p>
+                    <p>You can use up to 5 different prefixes to independently control the layout for different sizes.</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -109,7 +109,7 @@
                                 <td>greater than 0</td>
                             </tr>
                             <tr>
-                                <td><b>S</b>small</td>
+                                <td><b>S</b>mall</td>
                                 <td><code>s-</code></td>
                                 <td>greater than 320px</td>
                             </tr>
@@ -131,17 +131,29 @@
                         </tbody>
                     </table>
                 </div>
-                <h5>multiple columns</h5>
+                <h5>parallel columns</h5>
                 <div>
                     <pre><code>&lt;div class="m-col-3-4" &gt;...&lt;/div&gt;
 &lt;div class="m-col-1-4" &gt;...&lt;/div&gt;</code></pre>
                 </div>
                 <h5>centered columns</h5>
-                <p>content</p>
+                    <pre><code>&lt;div class="m-center-5-7" &gt;...&lt;/div&gt;</code></pre>
                 <h5>offset columns</h5>
-                <p>content</p>
+                    <pre><code>&lt;div class="m-col-1-4" &gt;...&lt;/div&gt;
+&lt;div class="m-col-1-4 m-offset-1-4" &gt;...&lt;/div&gt;
+&lt;div class="m-col-1-4" &gt;...&lt;/div&gt;</code></pre>
                 <h5>displaces columns</h5>
-                <p>content</p>
+                    <pre><code>&lt;div class="m-center-8-10" &gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;div class="m-col-3-5 m-left-0-1" &gt;...&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;div class="m-col-3-5 m-left-1-10" &gt;...&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;div class="m-col-3-5 m-right-0-1" &gt;...&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;div class="m-col-3-5 m-right-1-10" &gt;...&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
             </div>
             <h4>Typography</h4>
             <div data-collapse="accordion">
