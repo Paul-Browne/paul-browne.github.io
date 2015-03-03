@@ -441,9 +441,13 @@ data-src="&lt;320:i/world-small.jpg,
         <script>
             epicGrid();
             hljs.initHighlighting();
+            /*
             $("body").bind("opened", function() {
                 epicGrid();
             });
+            */
+            
+            window.addEventListener("opened", epicGrid);
         </script>
         
         <!-- google analytics, uncomment if needed, adn change the UA-XXXXX-X -->
