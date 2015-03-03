@@ -177,7 +177,11 @@
                 </div>
                 <h5>displaces columns</h5>
                 <div>
-                    <p>Displaced columns are pushed left or right, so that content in the parent column (usually text) can flow around them</p>
+                    <p>Displaced columns are pushed left or right, so that content in the parent column (usually text) can flow around them.<br>
+                    In the below example the main (pink) column is eight tenths wide and centered, meaning that it has one tenth of "free space" on either side.<br>
+                    The blue columns are aligned to the left/right margin of their parent by the addition of the class <code>m-left-0-1</code> or <code>m-right-0-1</code>.<br>
+                    The orange columns are pushed through the left/right margin of their parent by one tenth, because they have the class <code>m-left-1-10</code> or <code>m-right-1-10</code>.<br>
+                    Note: If you intend to push a column through its parent's margin be sure that the parent has enough free space on that side. In this example the maximum amount of free space was infact one tenth.</p>
                     <pre><code>&lt;div class="m-center-8-10" &gt;
     &lt;p&gt;...&lt;/p&gt;
     &lt;div class="m-col-3-5 m-left-0-1" &gt;...&lt;/div&gt;
@@ -197,12 +201,12 @@
                             <p>Morbi sit amet ipsum ac ipsum hendrerit malesuada sed non magna. Donec erat odio, sodales quis facilisis gravida, maximus vel ex. Sed non dapibus turpis. In ultricies, justo in cursus aliquam, augue quam euismod lacus, vel iaculis turpis urna sed orci.</p>
                         </div>
                         <p>Phasellus sapien dolor, hendrerit ac mi ac, viverra dictum lacus. Integer a orci nunc. Quisque quis gravida est, ut cursus sem. Curabitur justo lorem, vehicula eget mauris id, auctor consequat neque. Etiam a velit malesuada metus dapibus vulputate sed at dui. Curabitur vulputate sapien arcu, et pulvinar urna euismod sit amet. Mauris pharetra suscipit lacus vitae feugiat. Praesent vehicula vel ante lobortis finibus.</p>
-                        <div class="m-col-3-5 m-left-1-10" style="background:skyblue;">
+                        <div class="m-col-3-5 m-left-1-10" style="background:orange;">
                             <p>Etiam orci dolor, congue et nibh quis, ultricies condimentum lorem. Phasellus pharetra elit nec nisi luctus, non aliquam dui feugiat. Praesent nisl neque, eleifend quis ante id, venenatis varius metus. Nulla dictum vel felis at eleifend. Donec eget facilisis felis.</p>
                         </div>
                         <p>Etiam quis ipsum convallis, faucibus velit ac, lobortis nisl. Quisque sit amet mauris ullamcorper, condimentum metus tempus, gravida lectus. Nulla id nulla feugiat magna lacinia commodo in vitae lectus. Duis et sagittis odio. Mauris rutrum ex ut fermentum lobortis. Integer pellentesque metus sit amet venenatis porta. Etiam ac porta lectus, et convallis est. Suspendisse fermentum cursus ex at congue. Vestibulum diam sem, porta eu mauris sed, lacinia aliquam ante.</p>    
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus metus ipsum, non fermentum mauris sagittis quis. Maecenas aliquam tellus ac dolor fermentum fermentum. Etiam dictum tellus ac dui ultricies, et eleifend enim posuere. Cras porta fringilla vehicula. Etiam vitae urna sodales, dapibus risus in, semper nulla. Vestibulum nec aliquam sapien, vitae iaculis lorem. Duis sollicitudin gravida sollicitudin.</p>
-                        <div class="m-col-3-5 m-right-0-1" style="background:orange;">
+                        <div class="m-col-3-5 m-right-0-1" style="background:skyblue;">
                             <p>Morbi sit amet ipsum ac ipsum hendrerit malesuada sed non magna. Donec erat odio, sodales quis facilisis gravida, maximus vel ex. Sed non dapibus turpis. In ultricies, justo in cursus aliquam, augue quam euismod lacus, vel iaculis turpis urna sed orci.</p>
                         </div>
                         <p>Phasellus sapien dolor, hendrerit ac mi ac, viverra dictum lacus. Integer a orci nunc. Quisque quis gravida est, ut cursus sem. Curabitur justo lorem, vehicula eget mauris id, auctor consequat neque. Etiam a velit malesuada metus dapibus vulputate sed at dui. Curabitur vulputate sapien arcu, et pulvinar urna euismod sit amet. Mauris pharetra suscipit lacus vitae feugiat. Praesent vehicula vel ante lobortis finibus.</p>
