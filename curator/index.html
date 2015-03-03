@@ -140,17 +140,25 @@
                 </div>
                 <h5>parallel columns</h5>
                 <div>
-                    <p>In this simple example there are 2 columns - a main column and a sidebar, three quarters and one quarter wide, respectively.</p>
+                    <p>In this simple example there are 2 columns - a main column and a sidebar, three quarters and one quarter wide, respectively.<br>
+                    Note how there is no need to wrap a clearfix container around these columns in order to clear the floats. This is done automatically by epicGrid every time the column amount equals one.</p>
                     <pre><code>&lt;div id="main" class="m-col-3-4" &gt;...&lt;/div&gt;
 &lt;div id="sidebar" class="m-col-1-4" &gt;...&lt;/div&gt;</code></pre>
                     
                     <!-- example-2 -->
                     <div class="m-col-3-4" style="min-height:100px;background:pink;"></div>
                     <div class="m-col-1-4" style="min-height:100px;background:blue;"></div>
-                    
+                
                 </div>
                 <h5>centered columns</h5>
-                    <pre><code>&lt;div class="m-center-5-7" &gt;...&lt;/div&gt;</code></pre>
+                <p>In this simple example there are two centered columns. This example shows how versatile the grid system is by allowing any combination of "fractions" for the column sizes.</p>
+                    <pre><code>&lt;div class="m-center-71-95" &gt;...&lt;/div&gt;
+&lt;div class="m-center-31-43" &gt;...&lt;/div&gt;</code></pre>
+                    
+                    <!-- example-3 -->
+                    <div class="m-center-71-95" style="min-height:100px;background:pink;"></div>
+                    <div class="m-center-31-43" style="min-height:100px;background:blue;"></div>
+                    
                 <h5>offset columns</h5>
                     <pre><code>&lt;div class="m-col-1-4" &gt;...&lt;/div&gt;
 &lt;div class="m-col-1-4 m-offset-1-4" &gt;...&lt;/div&gt;
