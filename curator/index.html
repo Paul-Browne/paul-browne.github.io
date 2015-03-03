@@ -48,128 +48,93 @@
             </div>
         </div>
         
-        <div class="x-center-9-10 m-center-5-6">
-            <div class="m-col-1-3">
-                <h3 class="center-text">Simple Grid System</h3>
-                <div class="icovr features">
-                    <img src="http://placehold.it/20x15/f5f5f5"
-                    data-src="<200:http://placehold.it/200x150/a5a5a5,
-                              <400:http://placehold.it/400x300/fefefe,
-                              >400:http://placehold.it/600x450/121212" />
-                </div>
-                <p>An easy to learn and easy to use grid system; Use multiple, centered, offset and displaced columns, with up to 5 different breakpoints, and best of all - no more clearfix containers!</p>
-            </div>
-            <div class="m-col-1-3">
-                <h3 class="center-text">Beautiful Typography</h3>
-                <div class="icovr features">
-                    <img src="http://placehold.it/20x15/f5f5f5"
-                    data-src="<200:http://placehold.it/200x150/a5a5a5,
-                              <400:http://placehold.it/400x300/fefefe,
-                              >400:http://placehold.it/600x450/121212" />
-                </div>
-                <p>Making text readable accross all devices</p>
-            </div>
-            <div class="m-col-1-3">
-                <h3 class="center-text">Responsive Images</h3>
-                <div class="icovr features">
-                    <img src="http://placehold.it/20x15/f5f5f5"
-                    data-src="<200:http://placehold.it/200x150/a5a5a5,
-                              <400:http://placehold.it/400x300/fefefe,
-                              >400:http://placehold.it/600x450/121212" />
-                </div>
-                <p>Image replacement done right; Images are swapped based on container width and pixel density - meaning there is no need to specify a seperate image for @2x or @3x devices.</p>
-            </div>
-        </div>
-        <div class="x-center-9-10 m-center-4-5">
-            <div>
-                <h4>Grid System</h4>
-                <div data-collapse="accordion">
+
+        <div class="x-center-9-10 m-center-4-5" data-collapse="accordion">
+            <h4>Grid System</h4>
+            <div data-collapse="accordion">
                 <h5>overview</h5>
                 <div>
-                <p><a href="#">epicGrid</a> controls the layout. With epicGrid there are two types of columns, and two types of "additions" which add other style to the columns</p>
-<table class="table">
-<thead>
-<tr>
-<th>Column types</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>prefix-col-x-y</code></td>
-<td>A column for the chosen viewport. X number of columns wide from a total of Y</td>
-</tr>
-<tr>
-<td><code>prefix-center-x-y</code></td>
-<td>Center the column for that viewport. X number of columns wide from a total of Y</td>
-</tr>
-<tr>
-<td><code>prefix-offset-x-y</code></td>
-<td>Offset the column to the right by X number of columns from a total of Y</td>
-</tr>
-<tr>
-<td><code>prefix-left-x-y</code></td>
-<td>Displace a column to the left by X number of columns from a total of Y</td>
-</tr>
-<tr>
-<td><code>prefix-right-x-y</code></td>
-<td>Displace a column to the right by X number of columns from a total of Y</td>
-</tr>
-</tbody>
-</table>
-
-<ul>
-<li>choose one of the prefixes <code>x</code>, <code>s</code>, <code>m</code>, <code>l</code> or <code>h</code> for that viewport</li>
-<li>classes <code>left</code>, <code>right</code> and <code>offset</code> must be accompanied with a <code>col</code> class to specify width.</li>
-<li>the class <code>center</code> cannot be used with <code>left, right or offset</code>, only <code>col</code>.</li>
-</ul>
+                    <p><a href="#">epicGrid</a> controls the layout. With epicGrid there are two types of columns, and two types of "additions" which add other style to the columns</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Column types</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>prefix-col-x-y</code></td>
+                                <td>A column for the chosen viewport. X number of columns wide from a total of Y</td>
+                            </tr>
+                            <tr>
+                                <td><code>prefix-center-x-y</code></td>
+                                <td>Center the column for that viewport. X number of columns wide from a total of Y</td>
+                            </tr>
+                            <tr>
+                                <td><code>prefix-offset-x-y</code></td>
+                                <td>Offset the column to the right by X number of columns from a total of Y</td>
+                            </tr>
+                            <tr>
+                                <td><code>prefix-left-x-y</code></td>
+                                <td>Displace a column to the left by X number of columns from a total of Y</td>
+                            </tr>
+                            <tr>
+                                <td><code>prefix-right-x-y</code></td>
+                                <td>Displace a column to the right by X number of columns from a total of Y</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li>choose one of the prefixes <code>x</code>, <code>s</code>, <code>m</code>, <code>l</code> or <code>h</code> for that viewport</li>
+                        <li>classes <code>left</code>, <code>right</code> and <code>offset</code> must be accompanied with a <code>col</code> class to specify width.</li>
+                        <li>the class <code>center</code> cannot be used with <code>left, right or offset</code>, only <code>col</code>.</li>
+                    </ul>
                 </div>
                 <h5>breakpoints</h5>
                 <div>
-                <p>You can use up to 5 different prefixes to independently control the layout for different sizes</p>
+                    <p>You can use up to 5 different prefixes to independently control the layout for different sizes</p>
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th>size</th>
-                            <th>prefix</th>
-                            <th>breakpoint</th>
-                          </tr>
+                            <tr>
+                                <th>size</th>
+                                <th>prefix</th>
+                                <th>breakpoint</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>e<b>X</b>tra small</td>
-                            <td><code>x-</code></td>
-                            <td>greater than 0</td>
-                          </tr>
-                          <tr>
-                            <td><b>S</b>small</td>
-                            <td><code>s-</code></td>
-                            <td>greater than 320px</td>
-                          </tr>
-                          <tr>
-                            <td><b>M</b>edium</td>
-                            <td><code>m-</code></td>
-                            <td>greater than 656px</td>
-                          </tr>
-                          <tr>
-                            <td><b>L</b>arge</td>
-                            <td><code>l-</code></td>
-                            <td>greater than 1024px</td>
-                          </tr>
-                          <tr>
-                            <td><b>H</b>uge</td>
-                            <td><code>h-</code></td>
-                            <td>greater than 1440px</td>
-                          </tr>
+                            <tr>
+                                <td>e<b>X</b>tra small</td>
+                                <td><code>x-</code></td>
+                                <td>greater than 0</td>
+                            </tr>
+                            <tr>
+                                <td><b>S</b>small</td>
+                                <td><code>s-</code></td>
+                                <td>greater than 320px</td>
+                            </tr>
+                            <tr>
+                                <td><b>M</b>edium</td>
+                                <td><code>m-</code></td>
+                                <td>greater than 656px</td>
+                            </tr>
+                            <tr>
+                                <td><b>L</b>arge</td>
+                                <td><code>l-</code></td>
+                                <td>greater than 1024px</td>
+                            </tr>
+                            <tr>
+                                <td><b>H</b>uge</td>
+                                <td><code>h-</code></td>
+                                <td>greater than 1440px</td>
+                            </tr>
                         </tbody>
-                      </table>
-                      <p></p>
+                    </table>
                 </div>
                 <h5>multiple columns</h5>
                 <div>
                     <pre><code>&lt;div class="m-col-3-4" &gt;...&lt;/div&gt;
-&lt;div class="m-col-1-4" &gt;...&lt;/div&gt;
-                    </code></pre>
+&lt;div class="m-col-1-4" &gt;...&lt;/div&gt;</code></pre>
                 </div>
                 <h5>centered columns</h5>
                 <p>content</p>
@@ -177,111 +142,107 @@
                 <p>content</p>
                 <h5>displaces columns</h5>
                 <p>content</p>
-                </div>
             </div>
-    
-            <div>
-                <h4>Typography</h4>
-                <div data-collapse="accordion">
-                    <h5>headings</h5>
-                    <div>
+            <h4>Typography</h4>
+            <div data-collapse="accordion">
+                <h5>headings</h5>
+                <div>
                     <p><a href="#">typeScale</a> slightly adjusts the base font-size making text more readable across all devices.</p>
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th data-sort="int">element</th>
-                                <th data-sort="float">font-size</th>
-                                <th data-sort="string">line-height</th>
-                                <th data-sort="string">example</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>element</th>
+                                <th>font-size</th>
+                                <th>line-height</th>
+                                <th>example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
                                 <td><code>&lt;h1&gt</code></td>
                                 <td>2.643em</td>
                                 <td>1.2</td>
                                 <td><h1>Headline</h1></td>
-                              </tr>
-                              <tr>
+                            </tr>
+                            <tr>
                                 <td><code>&lt;h2&gt</code></td>
                                 <td>2.073em</td>
                                 <td>1.2</td>
                                 <td><h2>Headline</h2></td>
-                              </tr>
-                              <tr>
+                            </tr>
+                            <tr>
                                 <td><code>&lt;h3&gt</code></td>
                                 <td>1.626em</td>
                                 <td>1.2</td>
                                 <td><h3>Headline</h3></td>
-                              </tr>
-                              <tr>
+                            </tr>
+                            <tr>
                                 <td><code>&lt;h4&gt</code></td>
                                 <td>1.275em</td>
                                 <td>1.2</td>
                                 <td><h4>Headline</h4></td>
-                              </tr>
-                              <tr>
+                            </tr>
+                            <tr>
                                 <td><code>&lt;h5&gt</code></td>
                                 <td>0.784em</td>
                                 <td>inherit</td>
                                 <td><h5>Headline</h5></td>
-                              </tr>
-                              <tr>
+                            </tr>
+                            <tr>
                                 <td><code>&lt;h6&gt</code></td>
                                 <td>0.615em</td>
                                 <td>inherit</td>
                                 <td><h6>Headline</h6></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                    <h5>blockquotes and addresses</h5>
-                    <div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5>blockquotes and addresses</h5>
+                <div>
                     <blockquote>This is an example of a blockquote, they are generally longer than regular quotes.</blockquote>
-                    </div>
-                    <h5>Initial</h5>
-                    <p>Here goes the examples</p>
                 </div>
+                <h5>Initial</h5>
+                <p>Here goes the examples</p>
             </div>
-            
-            <div>
-                <h4>Image Tools</h4>
-                <div data-collapse="accordion">
-                    <h5>responsive images</h5>
-                    <div>
+            <h4>Image Tools</h4>
+            <div data-collapse="accordion">
+                <h5>responsive images</h5>
+                <div>
                     <p>Responsive images - images that change depending on container size and device pixel density, are easy to add. The example below shows 5 different images that will be loaded depending on the afore mentioned conditions. The placeholder image is loaded regardless, but is entierly optional. You can specify as few, or as many breakpoints as you like.</p>
-                        <pre><code>&lt;img src="i/placehoder.jpg" class="foo" id="bar" alt=""
-data-src="&lt;320:i/small.jpg,
-          &lt;600:i/medium.jpg,
-          &lt;1024:i/large.jpg,
-          &lt;1440:i/huge.jpg,
-          &gt;1440:i/massive.jpg" /></code></pre>
-                    </div>
-                    <h5>image cover</h5>
-                    <div>
-                    <p>Adding the class <code>icovr</code> to a container of an <code>&lt;img&gt;</code> will gaurentee that the image covers the container and is centered. In the same way that <code>background-size: cover; background-position: center center;</code> works for background images. A <code>height</code> for the container must be specified in order for it to work properly.</p>
-                        <pre><code>&lt;div class="icovr" id="bar"&gt;
-    &lt;img src="i/sunset.jpg" alt="" /&gt;
-&lt;/div&gt;</code></pre>
-                    </div>
-                    <h5>Carousel</h5>
-                    <p>content</p>
+                    <pre><code>&lt;img src="i/placehoder.jpg" class="foo" id="bar" alt=""
+    data-src="&lt;320:i/small.jpg,
+      &lt;600:i/medium.jpg,
+      &lt;1024:i/large.jpg,
+      &lt;1440:i/huge.jpg,
+      &gt;1440:i/massive.jpg" /></code></pre>
                 </div>
+                <h5>image cover</h5>
+                <div>
+                    <p>Adding the class <code>icovr</code> to a container of an <code>&lt;img&gt;</code> will gaurentee that the image covers the container and is centered. In the same way that <code>background-size: cover; background-position: center center;</code> works for background images. A <code>height</code> for the container must be specified in order for it to work properly.</p>
+                    <pre><code>&lt;div class="icovr" id="bar"&gt;
+    &lt;img src="i/sunset.jpg" alt="" /&gt;
+    &lt;/div&gt;</code></pre>
+                </div>
+                <h5>Carousel</h5>
+                <p>content</p>
             </div>
-            
-            <div>
-                <h4>Forms</h4>
+            <h4>Forms</h4>
+            <div data-collapse="accordion">
                 <h5>text area</h5>
+                <p>content</p>
                 <h5>check and radio boxes</h5>
+                <p>content</p>
                 <h5>date and time</h5>
+                <p>content</p>
                 <h5>select boxes</h5>
+                <p>content</p>
                 <h5>buttons</h5>
+                <p>content</p>
                 <h5>validation</h5>
+                <p>content</p>
             </div>
-    
-            <div>
-                <h4>Other</h4>
-                <div data-collapse="accordion">
+            <h4>Other</h4>
+            <div data-collapse="accordion">
                 <h5>tables</h5>
                 <div>
                     <table class="table" data-sortable>
@@ -357,7 +318,6 @@ data-src="&lt;320:i/small.jpg,
                 <p>content</p>
                 <h5>lightbox</h5>
                 <p>content</p>
-                </div>
             </div>
         </div>
 
