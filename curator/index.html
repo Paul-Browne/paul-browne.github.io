@@ -50,6 +50,9 @@
         
 
         <div class="x-center-9-10 m-center-4-5" data-collapse="accordion">
+        
+            <!-- grid system -->
+        
             <h4>Grid System</h4>
             <div data-collapse="accordion">
                 <h5>overview</h5>
@@ -230,11 +233,14 @@
                 
                 </div>
             </div>
+            
+            <!-- Typography -->
+            
             <h4>Typography</h4>
             <div data-collapse="accordion">
                 <h5>headings</h5>
                 <div>
-                    <p><a href="#">typeScale</a> slightly adjusts the base font-size making text more readable across all devices.</p>
+                    <p>Curator uses <a href="#">typeScale</a> to slightly adjusts the base font-size making text more readable across all devices.</p>
                     <table class="table">
                         <thead>
                             <tr>
@@ -291,17 +297,28 @@
                 <h5>Initial</h5>
                 <p>Here goes the examples</p>
             </div>
+            
+            <!-- Image Tools -->
+            
             <h4>Image Tools</h4>
             <div data-collapse="accordion">
                 <h5>responsive images</h5>
                 <div>
                     <p>Responsive images - images that change depending on container size and device pixel density, are easy to add. The example below shows 5 different images that will be loaded depending on the afore mentioned conditions. The placeholder image is loaded regardless, but is entierly optional. You can specify as few, or as many breakpoints as you like.</p>
-                    <pre><code>&lt;img src="i/placehoder.jpg" class="foo" id="bar" alt=""
-data-src="&lt;320:i/small.jpg,
-          &lt;600:i/medium.jpg,
-          &lt;1024:i/large.jpg,
-          &lt;1440:i/huge.jpg,
-          &gt;1440:i/massive.jpg" /></code></pre>
+                    <pre><code>&lt;img src="i/world-placehoder.jpg" class="foo" id="bar" alt=""
+data-src="&lt;320:i/world-small.jpg,
+          &lt;600:i/world-medium.jpg,
+          &lt;1024:i/world-large.jpg,
+          &lt;1440:i/world-huge.jpg,
+          &gt;1440:i/world-massive.jpg" /></code></pre>
+                    <div>
+                        <img src="i/world-placeholder"
+                        data-src="<320:i/world-small,
+                                  <600:i/world-medium,
+                                  <1024:i/world-large,
+                                  <1440:i/world-huge,
+                                  >1440:i/world-massive" />
+                    </div>
                 </div>
                 <h5>image cover</h5>
                 <div>
