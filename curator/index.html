@@ -301,7 +301,7 @@
             <!-- Image Tools -->
             
             <h4>Image Tools</h4>
-            <div data-collapse="accordion">
+            <div id="demo" data-collapse="accordion">
                 <h5>responsive images</h5>
                 <div>
                     <p>Responsive images - images that change depending on container size and device pixel density, are easy to add. The example below shows 5 different images that will be loaded depending on the afore mentioned conditions.<br>
@@ -441,7 +441,9 @@ data-src="&lt;320:i/world-small.jpg,
         <script>
             epicGrid();
             hljs.initHighlighting();
-            $(".open").bind("opened", epicGrid() );
+            $("#demo").bind("opened", function(e, section) {
+                console.log(section, " was opened");
+            });
         </script>
         
         <!-- google analytics, uncomment if needed, adn change the UA-XXXXX-X -->
