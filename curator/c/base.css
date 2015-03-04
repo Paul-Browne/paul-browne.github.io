@@ -51,7 +51,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 fieldset{border:0;margin:0;padding:0}
 legend{border:0;padding:0}
-textarea{overflow:auto;resize:vertical;min-height:120px;width:100%;}
+textarea{overflow:auto;resize:vertical;min-height:120px;width:100%;padding:0.2em 0.5em;border-radius:4px}
 optgroup{font-weight:400}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
