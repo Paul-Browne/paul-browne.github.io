@@ -229,6 +229,13 @@ blockquote .source:before {
 }
 
 
+span.initial {
+	float: left;
+	margin-right: 0.1em;
+	font-size: 3.1765em;
+	line-height: 0.95em;
+}
+
 
 
 
