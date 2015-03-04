@@ -65,6 +65,7 @@
         
         &lt;!-- add a title --&gt;
         &lt;title&gt;title&lt;/title&gt;
+        
         &lt;!-- favicons, ipad/pod/phone icons, android icons and windows tiles --&gt;
         &lt;link rel="apple-touch-icon" href="apple-touch-icon.png"&gt;
         
@@ -92,7 +93,7 @@
     &lt;body&gt;
         &lt;!--[if lt IE 8]&gt;&lt;h1 class="center-text"&gt;YOUR BROWSER IS OLDER THAN JUSTIN BIEBER! &lt;a href="https://www.google.com/chrome/browser/desktop/index.html">USE GOOGLE CHROME, IT'S FREE!&lt;/a&gt;&lt;/h1&gt;&lt;![endif]--&gt;
         
-        &lt;!-- avoiding FOUC --&gt;
+        &lt;!-- avoiding FOUC & page yank --&gt;
         &lt;script&gt;var a=document.getElementsByTagName("body")[0],b=document.createElement("div");a.appendChild(b),b.id="loader",b.className="loading";var c=document.getElementById("loader");window.onload=function(){c.className="loaded",setTimeout(function(){a.removeChild(c)},1e3)},window.onbeforeunload=function(){a.id="byebye"};&lt;/script&gt;
 
 
