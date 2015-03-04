@@ -52,7 +52,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 fieldset{border:0;margin:0;padding:0}
 legend{border:0;padding:0}
 textarea{overflow:auto;resize:vertical}
-optgroup{font-weight:bold}
+optgroup{font-weight:400}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 u,ins{border-bottom:1px solid #4d4d4d;text-decoration:none}
