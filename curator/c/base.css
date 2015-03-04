@@ -57,6 +57,8 @@ table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 u,ins{border-bottom:1px solid #4d4d4d;text-decoration:none}
 s,strike,del{text-decoration:line-through}
+code,kbd,samp{background:#F1F1F1;font-size:85%;padding:0.2em 0.5em}
+mark,code{border-radius:4px}
 b,strong{font-weight:600}
 em,cite,i,dfn,var,blockquote,address{font-family:'Libre Baskerville',serif;font-weight:400;font-style:italic}
 q:before,q:after{font-size:1.15em}
