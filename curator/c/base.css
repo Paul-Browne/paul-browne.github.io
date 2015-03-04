@@ -22,7 +22,7 @@ audio:not([controls]){display:none;height:0}
 a{background:transparent}
 a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
-mark{background:#ff0;color:#000}
+mark{background:#ff0!important;color:#000}
 small{font-size:75%}
 sub,sup{font-size:65%;line-height:0;position:relative;vertical-align:baseline;font-weight:400}
 sup{top:-0.5em}
@@ -57,8 +57,7 @@ table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 u,ins{border-bottom:1px solid #4d4d4d;text-decoration:none}
 s,strike,del{text-decoration:line-through}
-code,kbd,samp{background:#F1F1F1;font-size:85%;padding:0.2em 0.5em}
-mark,code{border-radius:4px}
+code,kbd,samp,mark{background:#F1F1F1;font-size:85%;padding:0.2em 0.5em;border-radius:4px}
 b,strong{font-weight:600}
 em,cite,i,dfn,var,blockquote,address{font-family:'Libre Baskerville',serif;font-weight:400;font-style:italic}
 q:before,q:after{font-size:1.15em}
