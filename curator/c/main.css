@@ -231,9 +231,9 @@ blockquote .source:before {
 
 span.initial {
 	float: left;
-	margin-right: 0.1em;
-	font-size: 3em;
-	line-height: 0.95em;
+	margin-right: 0.15em;
+	font-size: 3.2em;
+	margin-bottom:-0.1em;
 }
 
 
