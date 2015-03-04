@@ -308,20 +308,20 @@
                     The placeholder image should be approx. 1024x768, <em>low quality</em> ~20kb in size. It is loaded regardless (before being replaced), but is entierly optional.<br>
                     You can specify as few, or as many breakpoints as you like, but it is highly advisable to include at least one "less than X" and one "greater than X" breakpoint, this way you gaurentee that the placeholder image is always replaced.</p>
                     <pre><code>&lt;img src="i/world-placehoder.jpg" class="foo" id="bar" alt=""
-data-src="&lt;320:i/world-small.jpg,
-          &lt;600:i/world-medium.jpg,
-          &lt;1024:i/world-large.jpg,
-          &lt;1440:i/world-huge.jpg,
-          &gt;1440:i/world-massive.jpg" /></code></pre>
+data-src="&lt;400:i/world-small.jpg,
+          &lt;800:i/world-medium.jpg,
+          &lt;1200:i/world-large.jpg,
+          &lt;1600:i/world-huge.jpg,
+          &gt;1600:i/world-massive.jpg" /></code></pre>
           
                     <!-- example-7 -->
-                    <div class="icovr" style="height:400px">
+                    <div>
                         <img src="i/world-placeholder.jpg"
-                        data-src="<320:i/world-small.jpg,
-                                  <600:i/world-medium.jpg,
-                                  <1024:i/world-large.jpg,
-                                  <1440:i/world-huge.jpg,
-                                  >1440:i/world-massive.jpg" />
+                        data-src="<400:i/world-small.jpg,
+                                  <800:i/world-medium.jpg,
+                                  <1200:i/world-large.jpg,
+                                  <1600:i/world-huge.jpg,
+                                  >1600:i/world-massive.jpg" />
                     </div>
                     
                 </div>
@@ -330,7 +330,7 @@ data-src="&lt;320:i/world-small.jpg,
                     <p>Adding the class <code>icovr</code> to a container of an <code>&lt;img&gt;</code> will gaurentee that the image covers the container and is centered. In the same way that <code>background-size:cover; background-position:center center;</code> works for background images. A <code>height</code> for the container must be specified in order for it to work properly.</p>
                     <pre><code>&lt;div class="icovr" id="bar"&gt;
     &lt;img src="i/world-medium.jpg" alt="" /&gt;
-    &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
     
                     <!-- example-8 -->
                     <div class="icovr" style="height:300px">
@@ -363,48 +363,48 @@ data-src="&lt;320:i/world-small.jpg,
                     <table class="table" data-sortable>
                         <thead>
                             <tr>
-                                <th data-sortable="false">Browser</th>
-                                <th data-sorted="true" data-sorted-direction="descending">Usage</th>
-                                <th>Initial release</th>
-                                <th>Stable version</th>
+                                <th data-sortable="false">Name</th>
+                                <th>Nationality</th>
+                                <th>Sales</th>
+                                <th data-sorted="true" data-sorted-direction="descending">Total Value</th>
+                                <th>Age</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Chrome</td>
-                                <td>42.68%</td>
-                                <td data-value="2008">September 2, 2008</td>
-                                <td>31.0.1650.57</td>
+                                <td>John Johnson</td>
+                                <td>British</td>
+                                <td>6</td>
+                                <td data-value="18500">£12,000</td>
+                                <td>35</td>
                             </tr>
                             <tr>
-                                <td>Internet Explorer</td>
-                                <td>25.44%</td>
-                                <td data-value="1995">August 16, 1995</td>
-                                <td>11.0.1</td>
+                                <td>Paul Paulson</td>
+                                <td>American</td>
+                                <td>5</td>
+                                <td data-value="15000">$15,000</td>
+                                <td>27</td>
                             </tr>
                             <tr>
-                                <td>Firefox</td>
-                                <td>20.01%</td>
-                                <td data-value="2002">September 23, 2002</td>
-                                <td>25.0.1</td>
+                                <td>Berti Beiger</td>
+                                <td>German</td>
+                                <td>8</td>
+                                <td data-value="17850">16,000€</td>
+                                <td>23</td>
                             </tr>
                             <tr>
-                                <td>Safari</td>
-                                <td>8.39%</td>
-                                <td data-value="2003">January 7, 2003</td>
-                                <td>7.0</td>
+                                <td>Ivan Drago</td>
+                                <td>Russian</td>
+                                <td>8</td>
+                                <td data-value="14500">900,000&#8381;</td>
+                                <td>40</td>
                             </tr>
                             <tr>
-                                <td>Opera</td>
-                                <td>1.03%</td>
-                                <td data-value="1994">Late 1994</td>
-                                <td>18.0.1284.49</td>
-                            </tr>
-                            <tr>
-                                <td>Other</td>
-                                <td data-value="0">2.44%</td>
-                                <td data-value="-1"></td>
-                                <td></td>
+                                <td>Zara Zapruda</td>
+                                <td>South African</td>
+                                <td>10</td>
+                                <td data-value="14450">170,000R</td>
+                                <td>33</td>
                             </tr>
                         </tbody>
                     </table>
