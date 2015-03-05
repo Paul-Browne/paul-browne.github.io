@@ -607,7 +607,36 @@ data-src="&lt;400:i/world-small.jpg,
                     <textarea placeholder="textarea"></textarea>
                 </div>
                 <h5>check and radio boxes</h5>
-                <p>content</p>
+                <div>
+                    <div class="icheck">
+                        <ul class="checklist">
+                            <li>
+                                <label for="peas">Peas</label>
+                                <input id="peas" type="checkbox">
+                            </li>
+                            
+                            <li>
+                                <input id="carrots" type="checkbox" checked>
+                                <label for="carrots">Carrots</label>
+                            </li>
+                            
+                            <li>
+                                <label for="potatoes">Potatoes</label>    
+                                <input id="potatoes" type="checkbox" checked>
+                            </li>
+                        </ul>
+                        <ul class="checklist">
+                            <li>
+                                <input id="male" type="radio" name="icheck">
+                                <label for="male">Male</label>
+                            </li>
+                            <li>
+                                <input id="female" type="radio" name="icheck">
+                                <label for="female">Female</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <h5>date and time</h5>
                 <p>content</p>
                 <h5>select boxes</h5>
@@ -705,6 +734,7 @@ data-src="&lt;400:i/world-small.jpg,
             
             $('body').on("opened", epicGrid);
             $('textarea').elasticize();
+            $('input').iCheck({checkboxClass: 'icheckbox_flat-blue',radioClass: 'iradio_flat-blue'});
             
             /*
             document.addEventListener("opened", epicGrid);
