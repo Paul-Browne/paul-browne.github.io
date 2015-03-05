@@ -237,10 +237,10 @@ span.initial {
 }
 
 textarea:focus{
-	border-color: #6496EB;
+	border-color: cornflowerblue;
 	outline: 0;
-	-webkit-box-shadow:0 0 8px #6496EB;
-	box-shadow:0 0 8px #6496EB;
+	-webkit-box-shadow:0 0 8px cornflowerblue;
+	box-shadow:0 0 8px cornflowerblue;
 }
 
 
