@@ -1,10 +1,10 @@
 icheck            - for stylized check and radio boxes
-______            - for validation
+validate.js       - for validation
 ______            - select boxes
 elasticize.js     - auto expanding text area
 pickdate.js       - date and time pickers
 epicGrid          - Grid System
-________          - sortable tables
+sortable          - sortable tables
 _______           - tooltips
 _______           - responsive images
 _______           - sticky headers
@@ -15,3 +15,4 @@ _________         - Maps
 ________          - Twitter feed integration
 ________          - Collapsable content
 ________          - Image carousel
+highlight.js      - Syntax highlighting
