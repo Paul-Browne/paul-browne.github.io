@@ -355,7 +355,7 @@ border-radius: 4px;
     outline: none;
 }
 
-.select-style:after {
+.select-style span {
     font-size: 30px;
     content: "\2e";
     font-family: "iconfont";
