@@ -785,6 +785,13 @@ data-src="&lt;400:i/world-small.jpg,
             document.addEventListener("opened", epicGrid);
             */
             
+            //$('.select-style span').click();
+            
+            $(document).on("click", ".select-style span", function(){
+                $(this).prev().click();
+            });
+
+            
             
             
         </script>
