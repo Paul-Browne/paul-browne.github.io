@@ -335,41 +335,7 @@ ul.checklist {
 /* select boxes */
 
 
-.select-style {
-position: relative;
-height: 32px;
-width: 160px;
-border: 1px solid;
-border-radius: 4px;
-}
 
-.select-style select {
-position: absolute;
-border: 0;
-height: 30px;
-width: 100%;
-border-radius: 4px;
-}
-
-.select-style select:focus {
-    outline: none;
-}
-
-.select-style span {
-font-size: 26px;
-content: "\2e";
-font-family: "iconfont";
-padding-left: 0px;
-right: 0;
-line-height: 24px;
-position: absolute;
-height: 30px;
-width: 30px;
-background: beige;
-border-left: 1px solid;
-border-radius: 0 4px 4px 0;
-z-index: 0;
-}
 
 
 
