@@ -371,10 +371,6 @@ border-radius: 4px;
     z-index: 0;
 }
 
-.select-style:hover:after {
-    z-index: 0;
-}
-
 
 
 
