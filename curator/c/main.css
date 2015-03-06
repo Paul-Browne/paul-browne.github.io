@@ -356,19 +356,19 @@ border-radius: 4px;
 }
 
 .select-style span {
-    font-size: 30px;
-    content: "\2e";
-    font-family: "iconfont";
-    padding-left: 1px;
-    right: 0;
-    line-height: 30px;
-    position: absolute;
-    height: 30px;
-    width: 31px;
-    background: beige;
-    border-left: 1px solid;
-    border-radius: 0 4px 4px 0;
-    z-index: 0;
+font-size: 26px;
+content: "\2e";
+font-family: "iconfont";
+padding-left: 0px;
+right: 0;
+line-height: 24px;
+position: absolute;
+height: 30px;
+width: 30px;
+background: beige;
+border-left: 1px solid;
+border-radius: 0 4px 4px 0;
+z-index: 0;
 }
 
 
