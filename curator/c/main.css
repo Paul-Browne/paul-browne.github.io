@@ -352,7 +352,7 @@ width:100%;
     outline: none;
 }
 
-.select-style select:after {
+.select-style:after {
     font-size:14px;
     content:"\2e";
     font-family:"iconfont";
