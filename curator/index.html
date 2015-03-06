@@ -787,9 +787,15 @@ data-src="&lt;400:i/world-small.jpg,
             
             //$('.select-style span').click();
             
+            /*
             $(document).on("click", ".select-style span", function(){
                 $(this).prev().click();
                 console.log("yoyoyo");
+            });
+            */
+            
+            $(".select-style span").click(function() {
+                $("select").click();
             });
 
             
