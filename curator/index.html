@@ -598,7 +598,11 @@ data-src="&lt;400:i/world-small.jpg,
     
                 </div>
                 <h5>Carousel</h5>
-                <p>content</p>
+                <ul class="rslides">
+                  <li><img src="http://lorempixel.com/400/200" /></li>
+                  <li><img src="http://lorempixel.com/400/200" /></li>
+                  <li><img src="http://lorempixel.com/400/200" /></li>
+                </ul>
             </div>
             <h4>Forms</h4>
             <div data-collapse="accordion">
@@ -1032,6 +1036,12 @@ data-src="&lt;400:i/world-small.jpg,
             */
             
             $("select").chosen()
+
+              $(function() {
+                $(".rslides").responsiveSlides();
+              });
+
+            
 
 
         </script>
