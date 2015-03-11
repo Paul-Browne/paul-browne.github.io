@@ -1,12 +1,12 @@
 icheck            - for stylized check and radio boxes
 validate.js       - for validation
-______            - select boxes
+chosen.js         - select boxes
 elasticize.js     - auto expanding text area
 pickdate.js       - date and time pickers
 epicGrid          - Grid System
 sortable          - sortable tables
 _______           - tooltips
-_______           - responsive images
+ResImg.js         - responsive images
 _______           - sticky headers
 ________          - animation on scroll
 _________         - parallax stuff
@@ -16,3 +16,25 @@ ________          - Twitter feed integration
 ________          - Collapsable content
 ________          - Image carousel
 highlight.js      - Syntax highlighting
+
+
+Curator V Bootstraps
+====================
+
+1. Responsive Images
+    Curator includes a solution for swapping images dependant on device size and pixel density straight out the box
+    
+2. Check, Radio, Select and Validate
+    Bootstraps styles checkboxes, radio buttons and select boxes but not to the same degree, it also doesn't have a built in validator
+    
+3. 
+    
+
+    
+
+
+
+
+
+
+
