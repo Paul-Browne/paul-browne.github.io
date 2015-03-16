@@ -1053,7 +1053,9 @@ data-src="&lt;400:i/world-small.jpg,
                 <h5>maps</h5>
                 <div>ddd</div>
                 <h5>twitter feeds</h5>
-                <p>content</p>
+                <div>
+                    <div id="obama-feed"></div>
+                </div>
                 <h5>collapsabe content</h5>
                 <p>content</p>
                 <h5>sticky navigation</h5>
@@ -1095,6 +1097,14 @@ data-src="&lt;400:i/world-small.jpg,
             $("select").chosen();
             $(".rslides").responsiveSlides();
             $("header").headroom();
+            
+            var config1 = {
+              "id": '577506012925706241',
+              "domId": 'example1',
+              "maxTweets": 1,
+              "enableLinks": true
+            };
+            twitterFetcher.fetch(config1);
 
 
         </script>
