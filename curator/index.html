@@ -79,7 +79,13 @@
         
         <!-- avoiding FOUC -->
         <script>var a=document.getElementsByTagName("body")[0],b=document.createElement("div");a.appendChild(b),b.id="loader",b.className="loading";var c=document.getElementById("loader");window.onload=function(){c.className="loaded",setTimeout(function(){a.removeChild(c)},1e3)},window.onbeforeunload=function(){a.id="byebye"};</script>
-
+        
+        <header>
+            <div>
+                <p>This is a header placeholder</p>
+            </div>
+        </header>    
+    
         <div class="fullscreen">
             <div id="hero" class="middlize center-text">
                 <h1><em class="h2 thin-text">Curator</em></h1>
@@ -1087,6 +1093,7 @@ data-src="&lt;400:i/world-small.jpg,
             $('input').iCheck({checkboxClass: 'icheckbox_flat-blue',radioClass: 'iradio_flat-blue'});
             $("select").chosen();
             $(".rslides").responsiveSlides();
+            $("header").headroom();
 
 
         </script>
