@@ -3,23 +3,36 @@ validate.js       - for validation
 chosen.js         - select boxes
 elasticize.js     - auto expanding text area
 pickdate.js       - date and time pickers
+
 epicGrid          - Grid System
 sortable          - sortable tables
-_______           - tooltips
+________          - Collapsable content
+
+_______           - social buttons
+
+hint.css          - tooltips
+leaflet.js        - Maps
+________          - Twitter feed integration
+
 ResImg.js         - responsive images
+________          - Image carousel
+_________         - Lightbox
+
 _______           - sticky headers
 ________          - animation on scroll
 _________         - parallax stuff
-_________         - Lightbox
-_________         - Maps
-________          - Twitter feed integration
-________          - Collapsable content
-________          - Image carousel
+
 highlight.js      - Syntax highlighting
+Fitvids           - Better fitting videos
 
 
-Curator V Bootstraps
-====================
+CURATOR V'S BOOTSTRAPS
+======================
+
+Bootstraps is a fantastic project, but it has beome a victim of its success, in that bootstrap's built websites all 
+look very similar - you can often tell a bootstrap's website the second it loads.
+If you are interested in using bootstraps, then PLEASE check out [bootswatch](https://bootswatch.com)
+
 
 1. Responsive Images
     Curator includes a solution for swapping images dependant on device size and pixel density straight out the box
@@ -28,8 +41,15 @@ Curator V Bootstraps
     Bootstraps styles checkboxes, radio buttons and select boxes but not to the same degree, it also doesn't have a built in validator
     
 3. 
-    
 
+
+
+FUTURE
+======
+    
+1. As browser standards improve, hopefully, we can drop the need for jQuery - I'm always on the lookout for vanilla plugins
+2. General evolution - As trends come-and-go, i'll update Curator accordinally
+3. Bug fixes 'n pull requests
     
 
 
