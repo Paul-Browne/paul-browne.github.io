@@ -423,6 +423,7 @@ header {
   width:100%;
   background:blue;
   color:white;
+  z.index:999;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
