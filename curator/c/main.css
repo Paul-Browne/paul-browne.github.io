@@ -482,9 +482,14 @@ span[title="Verified Account"] {
   border-radius: 4px;
 }
 
-.twitter-feed .user span:first-child {
+.twitter-feed .user span {
   color: #4d4d4d;
   font-weight: 600;
+}
+
+.twitter-feed .user span+span {
+  color: #37f;
+  font-weight: 400;
 }
 
 
