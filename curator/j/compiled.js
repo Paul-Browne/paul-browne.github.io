@@ -334,6 +334,16 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
         queue.splice(0,1);
       }
     }
+    
+    var justName = document.querySelectorAll(".user span span");
+    console.log(justName);
+    if (justName.length){
+      for(var i=0; i<justName.length; ++i) {
+        var nameAndBadge = document.querySelectorAll(".user span");
+        nameAndBadge[i].innerHTML = justName[i].innerHTML;
+      }
+    }
+    
   };
 
   // It must be a global variable because it will be called by JSONP.
