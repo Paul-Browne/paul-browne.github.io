@@ -308,12 +308,6 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
           }
         }
         
-        var justName = document.querySelectorAll(".user span span");
-        if (justName.length){
-            var nameAndBadge = document.querySelectorAll(".user span");
-            nameAndBadge[0].innerHTML = justName[0].innerHTML;
-        }
-        
         if (showInteractionLinks) {
           op += '<p class="interact"><a href="https://twitter.com/intent/' +
               'tweet?in_reply_to=' + tids[n] + '" class="twitter_reply_icon"' + (targetBlank ? ' target="_blank">' : '>') +
@@ -340,6 +334,13 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
         queue.splice(0,1);
       }
     }
+    
+    var justName = document.querySelectorAll(".user span span");
+    if (justName.length){
+        var nameAndBadge = document.querySelectorAll(".user span");
+        nameAndBadge[0].innerHTML = justName[0].innerHTML;
+    }
+    
   };
 
   // It must be a global variable because it will be called by JSONP.
