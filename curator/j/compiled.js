@@ -334,12 +334,13 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
         queue.splice(0,1);
       }
       
-      var justName = document.querySelectorAll(".user span span");
+      var justName = document.querySelectorAll("span[data-scribe='element:name']");
+      var verified = document.querySelectorAll("span[title='Verified Account']");
       console.log(justName);
-      if (justName.length){
-        for(var i=0; i<justName.length; ++i) {
-          var nameAndBadge = document.querySelectorAll(".user span");
-          nameAndBadge[i].innerHTML = justName[i].innerHTML;
+      if (verified.length){
+        for(var i=0; i<verified.length; ++i) {
+          var parentSpan = justName[i].parentNode;
+          parentSpan.innerHTML = justName[i].innerHTML;
         }
       }
       
