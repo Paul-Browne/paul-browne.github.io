@@ -1106,6 +1106,14 @@ data-src="&lt;400:i/world-small.jpg,
               "showImages": true
             };
             twitterFetcher.fetch(config1);
+            
+            var justName = document.querySelectorAll(".user span span");
+if (justName.length){
+  for(var i=0; i<justName.length; ++i) {
+    var nameAndBadge = document.querySelectorAll(".user span");
+    nameAndBadge[i].innerHTML = justName[i].innerHTML;
+  }
+}
 
 
         </script>
