@@ -342,10 +342,3 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
   return twitterFetcher;
 }));
 
-var justName = document.querySelectorAll(".user span span");
-if (justName.length){
-  for(var i=0; i<justName.length; ++i) {
-    var nameAndBadge = document.querySelectorAll(".user span");
-    nameAndBadge[i].innerHTML = justName[0].innerHTML;
-  }
-}
