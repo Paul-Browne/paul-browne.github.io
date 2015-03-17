@@ -458,6 +458,12 @@ header.headroom--unpinned {
   background: rgba(0, 0, 0, 0.05);
 }
 
+span[title="Verified Account"] {
+  font-family: iconfont;
+  top: .13em;
+  position: relative;
+  font-size: 1.1765em;
+}
 
 
 
