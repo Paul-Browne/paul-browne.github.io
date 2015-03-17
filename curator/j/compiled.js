@@ -333,12 +333,11 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
         twitterFetcher.fetch(queue[0]);
         queue.splice(0,1);
       }
-    }
-    
-    var justName = document.querySelectorAll(".user span span");
-    if (justName.length){
-        var nameAndBadge = document.querySelectorAll(".user span");
-        nameAndBadge[0].innerHTML = justName[0].innerHTML;
+      var justName = document.querySelectorAll(".user span span");
+      if (justName.length){
+          var nameAndBadge = document.querySelectorAll(".user span");
+          nameAndBadge[0].innerHTML = justName[0].innerHTML;
+      }
     }
     
   };
