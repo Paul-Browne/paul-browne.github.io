@@ -465,6 +465,9 @@ span[title="Verified Account"] {
   font-size: 1.1765em;
 }
 
+.twitter-feed .user:before,.twitter-feed .user:after{display:table;content:" "}
+.twitter-feed .user:after{clear:both}
+
 
 
 
