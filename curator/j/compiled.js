@@ -337,7 +337,7 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
       if (justName.length){
         for(var i=0; i<justName.length; ++i) {
           var nameAndBadge = document.querySelectorAll(".user span");
-          nameAndBadge[0].innerHTML = justName[0].innerHTML;
+          nameAndBadge[0].innerHTML = justName[i].innerHTML;
         }
       }
     }
