@@ -310,8 +310,8 @@ var hljs=new function(){function k(v){return v.replace(/&/gm,"&amp;").replace(/<
         if (showInteractionLinks) {
           op += '<p class="interact"><a href="https://twitter.com/intent/' +
               'tweet?in_reply_to=' + tids[n] + '" class="twitter_reply_icon"' + (targetBlank ? ' target="_blank">' : '>') +
-              '<span class="icon-reply"></span></a><a href="https://twitter.com/intent/retweet?tweet_id=' +
-              tids[n] + '" class="twitter_retweet_icon"' + (targetBlank ? ' target="_blank">' : '>') + '<span class="icon-retweet"></span></a>' +
+              '<span class="icon-reply"></span></a>&nbsp;<a href="https://twitter.com/intent/retweet?tweet_id=' +
+              tids[n] + '" class="twitter_retweet_icon"' + (targetBlank ? ' target="_blank">' : '>') + '<span class="icon-retweet"></span></a>&nbsp;' +
               '<a href="https://twitter.com/intent/favorite?tweet_id=' +
               tids[n] + '" class="twitter_fav_icon"' + (targetBlank ? ' target="_blank">' : '>') + '<span class="icon-star"></span></a></p>';
         }
