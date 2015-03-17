@@ -1056,6 +1056,9 @@ data-src="&lt;400:i/world-small.jpg,
                 <div>
                     <div id="obama-feed" class="twitter-feed"></div>
                 </div>
+                <div>
+                    <div id="ricky-feed" class="twitter-feed"></div>
+                </div>
                 <h5>collapsabe content</h5>
                 <p>content</p>
                 <h5>sticky navigation</h5>
@@ -1106,6 +1109,17 @@ data-src="&lt;400:i/world-small.jpg,
               "showImages": true
             };
             twitterFetcher.fetch(config1);
+            
+            
+            var config2 = {
+              "id": '577827984960307200',
+              "domId": 'ricky-feed',
+              "maxTweets": 20,
+              "enableLinks": true,
+              "showImages": true
+            };
+            twitterFetcher.fetch(config2);
+
             
 
 
