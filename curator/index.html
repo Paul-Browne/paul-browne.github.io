@@ -101,62 +101,58 @@
         
             <h4>BoilerPlate</h4>
             <div>
+                <p>Curators boilerplate includes some SEO meta that you can add</p>
                 <pre><code>&lt;!doctype html&gt;
-&lt;html prefix="og: http://ogp.me/ns#" class="" lang=""&gt;
+&lt;html prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/ class="" lang=""&gt;
     &lt;head&gt;
     
         &lt;!-- Title --&gt;
         &lt;title&gt;Add a title&lt;/title&gt;
         
         &lt;!-- regular meta stuff --&gt;
-        &lt;meta charset="utf-8" &gt;
-        &lt;meta name="description" content="Add a short description" &gt;
-        &lt;meta name="keywords" content="add,some,tags" &gt;
-        &lt;meta name="author" content="Your Name" &gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;
-        &lt;meta itemprop="image" content="http://path/to/image.jpg" &gt;
-        &lt;link rel="canonical" href="http://path/to/url" &gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="Add a short description"&gt;
+        &lt;meta name="keywords"    content="add,some,tags"&gt;
+        &lt;meta name="author"      content="Your Name"&gt;
+        &lt;meta name="viewport"    content="width=device-width, initial-scale=1"&gt;
         
-        &lt;!-- google+ --&gt;
-        &lt;link rel="author" href="The URL for your Google+ personal profile page" &gt;
+        &lt;!-- Schema.org markup for Google+ --&gt;
+        &lt;meta itemprop="name"        content="The Name or Title Here"&gt;
+        &lt;meta itemprop="description" content="This is the page description"&gt;
+        &lt;meta itemprop="image"       content="http://www.example.com/image.jpg"&gt;
+        &lt;link rel="author"           href="The URL for your Google+ personal profile page"&gt;
+        &lt;link rel="canonical"        href="http://path/to/url"&gt;
         
         &lt;!-- google, microsoft, alexa site verification --&gt;
-        &lt;meta name="google-site-verification" content="enter_string_here" &gt;
-        &lt;meta name="msvalidate.01" content="enter_string_here" &gt;
-        &lt;meta name="alexaVerifyID" content="enter_string_here" &gt;
+        &lt;meta name="google-site-verification" content="enter_string_here"&gt;
+        &lt;meta name="msvalidate.01"            content="enter_string_here"&gt;
+        &lt;meta name="alexaVerifyID"            content="enter_string_here"&gt;
         
         &lt;!-- twitter summary card --&gt;
-        &lt;meta name="twitter:card" content="summary" &gt;
-        &lt;meta name="twitter:site" content="@user_name" &gt;
-        &lt;meta name="twitter:creator" content="@user_name" &gt;
-        &lt;meta name="twitter:title" content="Add a title" &gt;
-        &lt;meta name="twitter:description" content="Add a description" &gt;
-        &lt;meta name="twitter:image" content="http://path/to/image.jpg" &gt;
-        &lt;meta name="twitter:url" content="http://path/to/url" &gt;
+        &lt;meta name="twitter:card"        content="summary"&gt;
+        &lt;meta name="twitter:site"        content="@user_name"&gt;
+        &lt;meta name="twitter:creator"     content="@user_name"&gt;
+        &lt;meta name="twitter:title"       content="Add a title"&gt;
+        &lt;meta name="twitter:description" content="Add a description"&gt;
+        &lt;meta name="twitter:image"       content="http://path/to/image.jpg"&gt;
+        &lt;meta name="twitter:url"         content="http://path/to/url"&gt;
         
         &lt;!-- Open Graph protocol, required fields --&gt;
-        &lt;meta property="og:title" content="title" &gt;
-        &lt;meta property="og:type" content="website" &gt;
-        &lt;meta property="og:url" content="http://path/to/url" &gt;
-        &lt;meta property="og:image" content="http://path/to/image.jpg" &gt;
+        &lt;meta property="og:title" content="title"&gt;
+        &lt;meta property="og:type"  content="website"&gt;
+        &lt;meta property="og:url"   content="http://path/to/url"&gt;
+        &lt;meta property="og:image" content="http://path/to/image.jpg"&gt;
         
         &lt;!-- Open Graph protocol, optional fields --&gt;
-        &lt;meta property="og:locale" content="en_US" &gt;
-        &lt;meta property="og:description" content="Add a short description" &gt;
-        &lt;meta property="og:site_name" content="yoursite.com" &gt;
-        
-        &lt;!-- schema.org --&gt;
-        &lt;script type="application/ld+json" &gt;
-          { "@context": "http://schema.org",
-            "@type": "WebSite", 
-            "url": "http://path/to/url" }
-        &lt;/script&gt;
+        &lt;meta property="og:locale"      content="en_US"&gt;
+        &lt;meta property="og:description" content="Add a short description"&gt;
+        &lt;meta property="og:site_name"   content="yoursite.com"&gt;
         
         &lt;!-- favicons etc --&gt;
-        &lt;link rel="apple-touch-icon" href="apple-touch-icon.png" &gt;
+        &lt;link rel="apple-touch-icon" href="apple-touch-icon.png"&gt;
         
         &lt;!-- add your styles in here --&gt;
-        &lt;link rel="stylesheet" href="c/style.css" &gt;
+        &lt;link rel="stylesheet" href="c/style.css"&gt;
         
         &lt;!-- fonts, via google --&gt;
         &lt;link href="//fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400italic" rel="stylesheet" type="text/css"&gt;
