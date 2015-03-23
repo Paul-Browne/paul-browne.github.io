@@ -4,7 +4,7 @@
 // https://github.com/d4tocchini/customevent-polyfill
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
 
-if (!window.CustomEvent || typeof window.CustomEvent !== 'function') {
+if ((!window.CustomEvent || typeof window.CustomEvent !== 'function')&&!( 'WebkitAppearance' in document.documentElement.style)) {
     var CustomEvent = function(event, params) {
         var evt;
         params = params || {
