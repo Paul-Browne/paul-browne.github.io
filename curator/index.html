@@ -1090,7 +1090,13 @@ data-src="&lt;400:i/world-small.jpg,
                     </table>
                 </div>
                 <h5>maps</h5>
-                <div>ddd</div>
+                <div>
+                    <p>Curator uses <a href="http://leafletjs.com/">Leaflet.js</a> with the <a href="https://github.com/leaflet-extras/leaflet-providers">Leaflet-providers</a> plugin, to make adding a map to your project really simple</p>
+                    <p>Simply add the following mark-up to your HTML</p>
+                    <pre><code>&lt;div id="map"&gt;&lt;/div&gt;</code></pre>
+                    <pre><code></code></pre>
+                    <div id="map"></div>
+                </div>
                 <h5>twitter feeds</h5>
                 <div>
                     <p>To intergrate a twitter feed onto your page, simply create an empty <code>div</code> with the following id and class</p>
@@ -1160,6 +1166,8 @@ data-src="&lt;400:i/world-small.jpg,
               "showImages": true
             };
             twitterFetcher.fetch(config1);
+            
+            var map = L.map('map').setView([51.505, -0.09], 13);
 
         </script>
         
