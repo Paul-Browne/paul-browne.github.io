@@ -1095,7 +1095,7 @@ data-src="&lt;400:i/world-small.jpg,
                     <p>Simply add the following mark-up to your HTML</p>
                     <pre><code>&lt;div id="map"&gt;&lt;/div&gt;</code></pre>
                     <pre><code></code></pre>
-                    <div id="map"></div>
+                    <div id="map" style="height:300px"></div>
                 </div>
                 <h5>twitter feeds</h5>
                 <div>
@@ -1168,6 +1168,8 @@ data-src="&lt;400:i/world-small.jpg,
             twitterFetcher.fetch(config1);
             
             var map = L.map('map').setView([51.505, -0.09], 13);
+            L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+            
 
         </script>
         
