@@ -1093,8 +1093,22 @@ data-src="&lt;400:i/world-small.jpg,
                 <div>ddd</div>
                 <h5>twitter feeds</h5>
                 <div>
+                    <p>To intergrate a twitter feed onto your page, simply create an empty <code>div</code> with the following id and class</p>
+                    <pre><code>&lt;div id="obama-feed" class="twitter-feed"&gt;&lt;/div&gt;</code></pre>
+                    <p>Then add this initialization script just before the closing body element</p>
+                    <pre><code>&lt;script&gt;
+    var config1 = {
+      "id": '577506012925706241',
+      "domId": 'obama-feed',
+      "maxTweets": 20,
+      "enableLinks": true,
+      "showImages": true
+    };
+    twitterFetcher.fetch(config1);
+&lt;/script&gt;</code></pre>
+                    <p>and you should see a twitter feed with President Obama's latest tweets</p>
+                    <br>
                     <div id="obama-feed" class="twitter-feed"></div>
-                    <div id="ricky-feed" class="twitter-feed"></div>
                 </div>
                 <h5>collapsabe content</h5>
                 <p>content</p>
