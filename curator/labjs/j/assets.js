@@ -9,7 +9,7 @@ $LAB
 	else {return null;}
 })
 .script(function(){
-	if (document.querySelectorAll('.twitter-feed').length) {return ["j/twitterfeed.js", "j/twitterfeed.css.js"]; }
+	if (document.querySelectorAll('.twitter-feed').length) {return ["j/twitterfetcher.js", "j/twitterfetcher.css.js"]; }
 	else {return null;}
 })
 .script(function(){
