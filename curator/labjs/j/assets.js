@@ -9,6 +9,10 @@ $LAB
 	else {return null;}
 })
 .script(function(){
+	if (document.querySelectorAll('.twitter-feed').length) {return ["j/twitterfeed.js", "j/twitterfeed.css.js"]; }
+	else {return null;}
+})
+.script(function(){
 	if (document.querySelectorAll('[data-collapse]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/collapse.js"]; }	
 	else {return null;}
 })
@@ -31,4 +35,14 @@ $LAB
 })
 .wait(function(){
   $('textarea').elasticize();
+})
+.wait(function(){
+  var config1 = {
+  "id": '577506012925706241',
+  "domId": 'obama-feed',
+  "maxTweets": 10,
+  "enableLinks": true,
+  "showImages": true
+  };
+  twitterFetcher.fetch(config1);
 });
