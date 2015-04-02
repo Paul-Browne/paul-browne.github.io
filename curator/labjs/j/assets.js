@@ -9,7 +9,7 @@ $LAB
 	else {return null;}
 })
 .script(function(){
-	if (document.querySelectorAll('#map').length) {return ["j/leaflet.js", "j/leaflet-providers", "j/map.css.js"]; }
+	if (document.querySelectorAll('#map').length) {return ["j/leaflet.js", "j/map.css.js"]; }
 	else {return null;}
 })
 .script(function(){
