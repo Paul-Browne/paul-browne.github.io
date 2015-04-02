@@ -1,3 +1,3 @@
 var script = document.createElement("script");
-script.src = "c/neverdone.js";
+script.src = "j/neverdone.js";
 document.getElementsByTagName("head")[0].appendChild(script);
