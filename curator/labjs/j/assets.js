@@ -13,7 +13,7 @@ $LAB
 	else {return null;}
 })
 .script(function(){
-	if (document.querySelectorAll('[type="checkbox"],[type="radio"]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/icheck.js", "j/icheck.css.js"]; }	
+	if (document.querySelectorAll('[type="checkbox"],[type="radio"]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/icheck.css.js", "j/icheck.js"]; }	
 	else {return null;}
 })
 .script(function(){
