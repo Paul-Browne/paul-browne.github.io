@@ -9,6 +9,10 @@ $LAB
 	else {return null;}
 })
 .script(function(){
+	if (document.getElementById('map').length) {return ["j/leaflet.js", "leaflet-providers", "j/map.css.js"]; }
+	else {return null;}
+})
+.script(function(){
 	if (document.querySelectorAll('.twitter-feed').length) {return ["j/twitterfetcher.js", "j/twitterfetcher.css.js"]; }
 	else {return null;}
 })
@@ -45,4 +49,13 @@ $LAB
   "showImages": true
   };
   twitterFetcher.fetch(config1);
+})
+.wait(function(){
+  var map1 = L.map('map', {
+  center: [53.8336, -0.4395],
+  zoom: 13
+  });
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map1);  
 });
