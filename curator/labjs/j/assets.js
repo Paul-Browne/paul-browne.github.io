@@ -29,6 +29,10 @@ $LAB
 	else {return null;}
 })
 .script(function(){
+	if (document.querySelectorAll('.rslides').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/responsiveslides.js"]; }	
+	else {return null;}
+})
+.script(function(){
 	if (document.querySelectorAll('[type="checkbox"],[type="radio"]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/icheck.css.js", "j/icheck.js"]; }	
 	else {return null;}
 })
@@ -50,6 +54,9 @@ $LAB
 })
 .wait(function(){
   $('header').headroom();
+})
+.wait(function(){
+  $(".rslides").responsiveSlides();
 })
 .wait(function(){
   var config1 = {
