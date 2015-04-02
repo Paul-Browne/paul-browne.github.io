@@ -50,7 +50,7 @@ $LAB
   "domId": 'obama-feed',
   "maxTweets": 10,
   "enableLinks": true,
-  "showImages": true
+  "showImages": false
   };
   twitterFetcher.fetch(config1);
 })
