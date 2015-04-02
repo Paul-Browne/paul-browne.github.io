@@ -1,0 +1,46 @@
+.twitter-feed ul {
+	  list-style: none;
+	  padding: 0;
+}
+
+.twitter-feed ul li {
+  border-radius: 4px;
+  margin-bottom: 2em;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+span[title="Verified Account"] {
+  font-family: iconfont;
+  top: .13em;
+  position: relative;
+  font-size: 1.1765em;
+}
+
+.twitter-feed .tweet {
+  font-family: libre baskerville;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.twitter-feed .user{
+  margin-bottom:1em;
+}
+
+.twitter-feed img {
+  border-radius: 4px;
+}
+
+.twitter-feed .user span {
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.twitter-feed .user span+span {
+  color: #37f;
+  font-weight: 400;
+}
+
+.twitter-feed span[title="Verified Account"] {
+  margin-left: -1.5em;
+}
