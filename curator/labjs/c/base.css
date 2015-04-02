@@ -144,10 +144,126 @@ h4, .h4 {font-size: 1.275em; margin-bottom: 0.8em }
 h5, .h5 {font-size: 0.784em; font-weight: 400; text-transform:uppercase; letter-spacing:1.5px }
 h6, .h6 {font-size: 0.615em; font-weight: 400 }
 
+blockquote {
+  font-size:1.2em;
+  margin-left:0;
+}
+
+blockquote:before {
+	float: left;
+	content: '\22';
+	font-style: normal;
+	font-size: 3.5em;
+	font-family: "iconfont";
+	line-height: 0.8em;
+	opacity: .35;
+}
+blockquote .source {
+	font-style: normal;
+	font-family: 'open sans', helvetica, sans;
+}
+
+blockquote .source:before {
+	content: '\2015\2015\00a0\00a0';
+	font-family: 'iconfont';
+	opacity: .35;
+}
+
+span.initial {
+	float: left;
+	margin-right: 0.1em;
+	font-size: 3.2em;
+	margin-bottom:-0.15em;
+}
+textarea {
+	-webkit-transition: all linear .15s;
+	-o-transition: all linear .15s;
+	transition: all linear .15s;
+}
+
+textarea:focus{
+	border-color: cornflowerblue;
+	outline: 0;
+	-webkit-box-shadow:0 0 8px cornflowerblue;
+	box-shadow:0 0 8px cornflowerblue;
+}
+
 /* ===== YOUR STYLES ===== */
 /* ======================= */
 
 
+/* ============ */
+/*    TABLES    */
+/* ============ */
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+table[data-sortable] th:after {
+    font-size:14px;
+    content:"\00a0";
+    font-family:"iconfont";
+    padding-left:12px;
+}
+th[data-sorted]{
+    cursor:pointer;
+}
+table[data-sortable] th[data-sorted]:after{
+    content:"b";
+}
+table[data-sortable] th[data-sorted="true"][data-sorted-direction="descending"]:after {
+    content:"]";
+}
+table[data-sortable] th[data-sorted="true"][data-sorted-direction="ascending"]:after {
+    content:"[";
+}
+th[data-sortable="false"] {
+    cursor:default;
+}
+table[data-sortable] th[data-sortable="false"]:after {
+    content:"\00a0";
+}
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.table thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+  text-align:left;
+}
+.table caption + thead tr:first-child th,
+.table colgroup + thead tr:first-child th,
+.table thead:first-child tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.table .table {
+  background-color: #ffffff;
+}
+.table tbody > tr:hover {
+  background:rgba(0, 255, 0, 0.05);
+}
+table.center-text th {
+  text-align:center;
+}
 
 /* ===== ICONFONT ===== */
 /* ==================== */
