@@ -1,8 +1,9 @@
 $LAB
+.script(j/epicGrid.js")
 .script(function(){
-	if (document.querySelectorAll('[class*="-col-"]').length) {return "j/epicGrid.js"; }
+	if (document.querySelectorAll('[data-sortable]').length) {return "j/sortable.js"; }
 	else {return null;}
 })
 .wait(function(){
-	epicGrid();
+  epicGrid();
 });
