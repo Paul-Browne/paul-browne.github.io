@@ -3,4 +3,4 @@ setTimeout(
     var script = document.createElement("script");
     script.src = "j/neverdone.js";
     document.getElementsByTagName("head")[0].appendChild(script);
-  },1e3)
+  },3e3)
