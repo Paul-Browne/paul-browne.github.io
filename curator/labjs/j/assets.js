@@ -21,7 +21,7 @@ $LAB
 })
 .wait(function(){
   $('input').iCheck({checkboxClass: 'icheckbox_flat-blue',radioClass: 'iradio_flat-blue'});
-});
+})
 .wait(function(){
   hljs.initHighlighting();
 });
