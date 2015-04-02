@@ -1,6 +1,10 @@
 $LAB
 .script("j/epicgrid.js")
 .script(function(){
+	if (document.querySelectorAll('[data-hint]').length) {return "j/tooltip.css.js"; }
+	else {return null;}
+})
+.script(function(){
 	if (document.querySelectorAll('[data-sortable]').length) {return "j/sortable.js"; }
 	else {return null;}
 })
