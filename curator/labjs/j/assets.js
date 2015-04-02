@@ -25,11 +25,15 @@ $LAB
 	else {return null;}
 })
 .script(function(){
-	if (document.querySelectorAll('header').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/headroom.js"]; }	
+	if (document.querySelectorAll('header').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/headroom.js", "j/headroom.css.js"]; }	
 	else {return null;}
 })
 .script(function(){
-	if (document.querySelectorAll('.rslides').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/responsiveslides.js"]; }	
+	if (document.querySelectorAll('select').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/chosen.js", "j/chosen.css.js"]; }	
+	else {return null;}
+})
+.script(function(){
+	if (document.querySelectorAll('.rslides').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/responsiveslides.js", "j/responsiveslides.css.js"]; }	
 	else {return null;}
 })
 .script(function(){
@@ -57,6 +61,9 @@ $LAB
 })
 .wait(function(){
   $(".rslides").responsiveSlides();
+})
+.wait(function(){
+  $("select").chosen();
 })
 .wait(function(){
   var config1 = {
