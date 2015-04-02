@@ -4,5 +4,5 @@ $LAB
 	else {return null;}
 })
 .wait(function(){
-	$.jaygrid();
+	epicGrid();
 });
