@@ -6,6 +6,20 @@
 
 /*! imageCover | fullScreen | typeScale | middlize | ResImg | epicGrid | Paul Browne | GNU License | 2015 */
 /*! imageCover | fullScreen | typeScale | middlize | ResImg | epicGrid | Paul Browne | GNU License | 2015 */
+
+/*! Polyfill for creating CustomEvents on IE9/10/11 | https://github.com/d4tocchini/customevent-polyfill */
+if (!window.CustomEvent || "function" != typeof window.CustomEvent) {
+    var CustomEvent = function(a, b) {
+        var c;
+        return b = b || {
+            bubbles: !1,
+            cancelable: !1,
+            detail: void 0
+        }, c = document.createEvent("CustomEvent"), c.initCustomEvent(a, b.bubbles, b.cancelable, b.detail), c
+    };
+    CustomEvent.prototype = window.Event.prototype, window.CustomEvent = CustomEvent
+};
+
 ! function() {
   
 function rwo(a,b) {  
@@ -20,20 +34,6 @@ function rwo(a,b) {
     } 
   }, a;
 };
-
-/*! Polyfill for creating CustomEvents on IE9/10/11 | https://github.com/d4tocchini/customevent-polyfill */
-if (!window.CustomEvent || "function" != typeof window.CustomEvent) {
-    var CustomEvent = function(a, b) {
-        var c;
-        return b = b || {
-            bubbles: !1,
-            cancelable: !1,
-            detail: void 0
-        }, c = document.createEvent("CustomEvent"), c.initCustomEvent(a, b.bubbles, b.cancelable, b.detail), c
-    };
-    CustomEvent.prototype = window.Event.prototype, window.CustomEvent = CustomEvent
-};
-  
     helperize = function() {
         var a = window.innerWidth,
             b = document.getElementsByTagName("body")[0].style;
