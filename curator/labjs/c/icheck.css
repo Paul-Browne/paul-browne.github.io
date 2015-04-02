@@ -18,7 +18,7 @@ ul.checklist {
 }
 
 .icheckbox_flat-blue, .iradio_flat-blue {
-	position: absolute;
+	position: absolute!important;
 	left: 0;
 	top: 0px;
 }
