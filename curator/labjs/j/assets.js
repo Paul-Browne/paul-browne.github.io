@@ -1,6 +1,5 @@
 $LAB
 .script("j/epicgrid.js")
-.script("j/neverdone.js")
 .script(function(){
 	if (document.querySelectorAll('[data-hint]').length) {return "j/tooltip.css.js"; }
 	else {return null;}
