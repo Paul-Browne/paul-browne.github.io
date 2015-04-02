@@ -16,12 +16,19 @@ $LAB
 	if (document.querySelectorAll('[type="checkbox"],[type="radio"]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/icheck.js"]; }	
 	else {return null;}
 })
+.script(function(){
+	if (document.querySelectorAll('textarea').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/elasticize.js"]; }	
+	else {return null;}
+})
 .wait(function(){
   epicGrid();
+})
+.wait(function(){
+  hljs.initHighlighting();
 })
 .wait(function(){
   $('input').iCheck({checkboxClass: 'icheckbox_flat-blue',radioClass: 'iradio_flat-blue'});
 })
 .wait(function(){
-  hljs.initHighlighting();
+  $('textarea').elasticize();
 });
