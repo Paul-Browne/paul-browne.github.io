@@ -25,6 +25,10 @@ $LAB
 	else {return null;}
 })
 .script(function(){
+	if (document.querySelectorAll('header').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/headroom.js"]; }	
+	else {return null;}
+})
+.script(function(){
 	if (document.querySelectorAll('[type="checkbox"],[type="radio"]').length) {return ["//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js", "j/icheck.css.js", "j/icheck.js"]; }	
 	else {return null;}
 })
@@ -43,6 +47,9 @@ $LAB
 })
 .wait(function(){
   $('textarea').elasticize();
+})
+.wait(function(){
+  $('header').headroom();
 })
 .wait(function(){
   var config1 = {
