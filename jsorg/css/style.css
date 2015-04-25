@@ -118,6 +118,7 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 .logo-container {
   position:relative;
   text-align:center;
+  margin-bottom:100px;
 }
 
 .logo {
