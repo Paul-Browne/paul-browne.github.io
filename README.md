@@ -1,1 +1,2 @@
-### [paul.js.org](//paul.js.org)
+#### [paul.js.org](http://paul.js.org)
+---
