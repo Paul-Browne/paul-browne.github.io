@@ -4,7 +4,7 @@ $(function() {
         prefetch: true,
         pageCacheSize: 1,
         onStart: {
-            duration: 500,
+            duration: 400,
             render: function () {
                 $('body').addClass('byebye');
                 $('body').removeClass('hihi');
