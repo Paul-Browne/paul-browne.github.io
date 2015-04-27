@@ -7,7 +7,7 @@ $(function() {
             render: function () {
                 $('body').addClass('heeelllloooo');
             }
-        }
+        },
         callback: function(){epicGrid()}
     });
 });
