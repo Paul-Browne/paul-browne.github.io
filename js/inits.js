@@ -8,11 +8,9 @@ $(function() {
                 $('body').addClass('heeelllloooo');
             }
         },
-        onEnd: {
-            render: function () {
-                $('body').removeClass('heeelllloooo');
-            }
-        },
-        callback: function(){epicGrid()}
+        callback: function(){
+            epicGrid();
+            $('body').removeClass('heeelllloooo');
+        }
     });
 });
