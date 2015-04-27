@@ -5,8 +5,8 @@
 #loader{background:#fff;position:fixed;width:100%;height:100%;z-index:999}
 #loader.loaded{-webkit-animation:fouc .5s .5s;animation:fouc .5s .5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 #byebye{-webkit-animation:fouc .5s;animation:fouc .5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
-@-webkit-keyframes fouc{from{opacity:1}to{opacity:0}}
-@keyframes fouc{from{opacity:1}to{opacity:0}}
+/*@-webkit-keyframes fouc{from{opacity:1}to{opacity:0}}*/
+/*@keyframes fouc{from{opacity:1}to{opacity:0}}*/
 
 /* resets */
 /* ====== */
@@ -166,13 +166,13 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 @keyframes fouc{from{opacity:1}to{opacity:0}}
 
 .hihi {
-  -webkit-animation:fouc .25s;
-  animation:fouc .25s;
+  -webkit-animation:fouc2 .25s;
+  animation:fouc2 .25s;
   -webkit-animation-fill-mode:
   forwards;animation-fill-mode:forwards
 }
-@-webkit-keyframes fouc{from{opacity:0}to{opacity:1}}
-@keyframes fouc{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes fouc2{from{opacity:0}to{opacity:1}}
+@keyframes fouc2{from{opacity:0}to{opacity:1}}
 
 
 /* print */
