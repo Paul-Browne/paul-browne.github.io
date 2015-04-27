@@ -64,11 +64,16 @@
         </div>
 
         <script>
+        <script>
             epicGrid();
-            ;(function ($) {
-                // Initialize smoothState on a container that has an id
-                $('#main').smoothState();
-            })(jQuery);
+            $(function() {
+                $('#main').smoothState({
+                    prefetch: true,
+                    pageCacheSize: 0,
+                    callback: function(){epicGrid()}
+                });
+            });
+        </script>
         </script>
     </body>
 </html>
