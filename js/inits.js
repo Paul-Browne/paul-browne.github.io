@@ -6,12 +6,19 @@ $(function() {
         onStart: {
             duration: 250,
             render: function () {
-                $('body').addClass('heeelllloooo');
+                $('body').addClass('byebye');
+                $('body').removeClass('hello');
+            }
+        },
+        onEnd: {
+            duration: 250,
+            render: function () {
+                $('body').addClass('hello');
+                $('body').removeClass('byebye');
             }
         },
         callback: function(){
             epicGrid();
-            $('body').removeClass('heeelllloooo');
         }
     });
 });
