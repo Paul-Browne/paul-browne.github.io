@@ -8,7 +8,7 @@
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400italic" rel="stylesheet" type="text/css">
         <link href="/css/style.css" type="text/css" media="all" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" media="all" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/scripts.js"></script>
         <!--[if lt IE 9]><script src="https://cdn.rawgit.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script><![endif]-->
     </head>
@@ -18,18 +18,20 @@
         <div class="logo-container">
             <div class="logo">
                 <span class="name"><em>Paul Browne</em></span>
-                <img width="100px" src="images/pb.png" alt="">
+                <img width="100px" src="/images/pb.png" alt="">
                 <span class="job"><em>Web Designer</em></span>
             </div>
         </div>
+        
+        <div id="main">
             <div class="l-center-5-6">
                 <div class="l-col-2-12 me-cont">
                     <img class="valign-h2" src = "images/me-plhldr-240.jpg"
-                    data-src = "<240:images/me-240.jpg,
-                                <360:images/me-360.jpg,
-                                <480:images/me-480.jpg,
-                                <600:images/me-600.jpg,
-                                >720:images/me-720.jpg" />
+                    data-src = "<240:/images/me-240.jpg,
+                                <360:/images/me-360.jpg,
+                                <480:/images/me-480.jpg,
+                                <600:/images/me-600.jpg,
+                                >720:/images/me-720.jpg" />
                 <div class="center-text">
                     <span class="fa fa-2x fa-github-square"></span>&nbsp;&nbsp;
                     <span class="fa fa-2x fa-twitter-square"></span>&nbsp;&nbsp;
@@ -38,15 +40,14 @@
                 </div>
                 <div class="l-col-19-24 l-offset-1-24">
                     <div id="post">
-                        <div id="first">
-                        <h2>Hello World</h2>
-                        <p>April, 25th 2015</p>
+                        <h2>Second Post</h2>
+                        <p>April, 27th 2015</p>
                         <p>So, I'm very excited to have secured the sub-domain <code>paul.js.org</code> as part of the fantastic <a href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">js.org</a> project - giving away free sub-domains to any javascript developer looking for a place to host their <a href="https://github.com" target="_blank" title="github">github</a> projects.</p>
                         <p>I'll be treating this domain as a showcase for all my javascript projects, as well using it as a sort of blog, sharing snippets and mentioning any other peoples projects that look interesting. <em>Stay tuned!</em></p>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div><!-- end of main -->
 
 
         <div id="jsorg">
@@ -56,6 +57,9 @@
 
         <script>
             epicGrid();
+            $(function() {
+                $('#main').smoothState();
+            });
         </script>
     </body>
 </html>
