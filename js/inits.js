@@ -3,7 +3,11 @@ $(function() {
     $('#main').smoothState({
         prefetch: true,
         pageCacheSize: 1,
-        onStart: function(){ $('body').addClass('start');},
+        onStart: {
+            render: function () {
+                $('body').addClass('heeelllloooo');
+            }
+        }
         callback: function(){epicGrid()}
     });
 });
