@@ -7,12 +7,13 @@ $(function() {
             duration: 200,
             render: function (url, $container) {
                 $('#main').addClass('byebye');
-                $("#main").wrap("<div class='bob'></div>").delay(180);
+                $('#main').removeClass('hihi');
             }
         },
         callback: function(){
-            $("#main").unwrap().delay(50);
             epicGrid();
+            $('#main').addClass('hihi').delay(100);
+            $('#main').removeClass('byebye'),delay(100);
         }
     });
 });
