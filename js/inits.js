@@ -12,8 +12,8 @@ $(function() {
         },
         callback: function(){
             epicGrid();
-            $('#main').delay(100).addClass('hihi');
-            $('#main').delay(100).removeClass('byebye');
+            $('#main').delay(900).addClass('hihi');
+            $('#main').delay(1000).removeClass('byebye');
         }
     });
 });
