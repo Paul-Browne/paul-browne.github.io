@@ -166,13 +166,13 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 @keyframes fouc{from{opacity:1}to{opacity:0}}
 
 .hihi #main > div{
-  -webkit-animation:fouc2 .8s;
-  animation:fouc2 .8s;
+  -webkit-animation:fouc2 .3s;
+  animation:fouc2 .3s;
   -webkit-animation-fill-mode:
   forwards;animation-fill-mode:forwards
 }
-@-webkit-keyframes fouc2{from{opacity:0}to{opacity:1}}
-@keyframes fouc2{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes fouc2{0%{opacity:0}50%{opacity:0}100%{opacity:1;}}
+@keyframes fouc2{0%{opacity:0}50%{opacity:0}100%{opacity:1;}}
 
 
 /* print */
