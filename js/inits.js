@@ -6,13 +6,12 @@ $(function() {
         onStart: {
             duration: 200,
             render: function (url, $container) {
-                $('body').addClass('byebye');
-                $('body').removeClass('hihi');
+                $('#main').addClass('byebye');
+                $('#main').removeClass('hihi');
             }
         },
         callback: function(){
-            //$('body').addClass('hihi');
-            //$('body').removeClass('byebye');
+            $( "#main" ).wrapInner( "<div class='bob'></div>");
             epicGrid();
         }
     });
