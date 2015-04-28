@@ -156,7 +156,7 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
   right: 6px;
 }
 
-#main.byebye > div {
+#main {
   -webkit-animation:fouc .2s;
   animation:fouc .2s;
   -webkit-animation-fill-mode:
@@ -165,14 +165,14 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 @-webkit-keyframes fouc{from{opacity:1}to{opacity:0}}
 @keyframes fouc{from{opacity:1}to{opacity:0}}
 
-#main.hihi > div{
+#main{
   -webkit-animation:fouc2 .2s;
   animation:fouc2 .2s;
   -webkit-animation-fill-mode:
   forwards;animation-fill-mode:forwards
 }
-@-webkit-keyframes fouc2{0%{opacity:0}50%{opacity:0}100%{opacity:1;}}
-@keyframes fouc2{0%{opacity:0}50%{opacity:0}100%{opacity:1;}}
+@-webkit-keyframes fouc2{0%{opacity:0}100%{opacity:1;}}
+@keyframes fouc2{0%{opacity:0}100%{opacity:1;}}
 
 
 /* print */
