@@ -3,20 +3,35 @@ $(function() {
     $('#main').smoothState({
         prefetch: true,
         pageCacheSize: 1,
-        onEnd: {
-            duration: 250,
-            render: function (url, $container) {
-                $('body').addClass('hihi');
-                $('body').removeClass('byebye');
-                epicGrid();
-            }
-        },
         onStart: {
             duration: 250,
             render: function (url, $container) {
                 $('body').addClass('byebye');
                 $('body').removeClass('hihi');
             }
+        },
+        onEnd: {
+                $('body').addClass('hihi');
+                $('body').removeClass('byebye');
+                epicGrid();
         }
     });
 });
+
+
+/*
+;(function($) {
+  var $body = $('html, body'),
+      content = $('#main').smoothState({
+        onStart: {
+          duration: 250,
+          render: function (url, $container) {
+            content.toggleAnimationClass('is-exiting');
+            $body.animate({
+              scrollTop: 0
+            });
+          }
+        }
+      }).data('smoothState');
+})(jQuery);
+*/
