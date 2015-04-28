@@ -7,11 +7,10 @@ $(function() {
             duration: 200,
             render: function (url, $container) {
                 $('#main').addClass('byebye');
-                $('#main').removeClass('hihi');
+                $("#main").wrap( "<div class='bob'></div>");
             }
         },
         callback: function(){
-            $( "#main" ).wrapInner( "<div class='bob'></div>");
             epicGrid();
         }
     });
