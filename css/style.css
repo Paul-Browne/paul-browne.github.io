@@ -156,7 +156,7 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
   right: 6px;
 }
 
-#main.byebye > div {
+#mai.byebye > div {
   -webkit-animation:fouc .2s;
   animation:fouc .2s;
   -webkit-animation-fill-mode:
@@ -165,7 +165,7 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 @-webkit-keyframes fouc{from{opacity:1}to{opacity:0}}
 @keyframes fouc{from{opacity:1}to{opacity:0}}
 
-#main.hihi > div{
+#mai.hihi > div{
   -webkit-animation:fouc2 .2s;
   animation:fouc2 .2s;
   -webkit-animation-fill-mode:
