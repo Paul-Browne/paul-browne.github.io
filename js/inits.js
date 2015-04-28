@@ -15,7 +15,7 @@ $(function() {
             setTimeout(function(){
                 $('#main').addClass('hihi');
                 $('#main').removeClass('byebye');   
-            }, 1000);
+            }, 200);
         }
     });
 });
