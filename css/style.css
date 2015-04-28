@@ -157,8 +157,8 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 }
 
 .byebye #main > div {
-  -webkit-animation:fouc .15s;
-  animation:fouc .15s;
+  -webkit-animation:fouc .25s;
+  animation:fouc .25s;
   -webkit-animation-fill-mode:
   forwards;animation-fill-mode:forwards
 }
