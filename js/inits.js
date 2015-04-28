@@ -10,7 +10,7 @@ $(function() {
                 $('body').removeClass('hihi');
             }
         },
-        onEnd: function(){
+        callback: function(){
             $('body').addClass('hihi');
             $('body').removeClass('byebye');
             epicGrid();
