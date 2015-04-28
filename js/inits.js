@@ -10,10 +10,10 @@ $(function() {
                 $('body').removeClass('hihi');
             }
         },
-        onEnd: {
-                $('body').addClass('hihi');
-                $('body').removeClass('byebye');
-                epicGrid();
+        onEnd: function(){
+            $('body').addClass('hihi');
+            $('body').removeClass('byebye');
+            epicGrid();
         }
     });
 });
