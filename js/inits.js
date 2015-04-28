@@ -11,7 +11,6 @@ $(function() {
             }
         },
         onEnd: {
-            duration: 250,
             render: function (url, $container) {
                 $('body').addClass('hihi');
                 $('body').removeClass('byebye');
