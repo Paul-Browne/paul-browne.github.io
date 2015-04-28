@@ -1,8 +1,7 @@
-<?php include 'head.php';?>
+<?php include '/inc/head.php';?>
 <title>Pages title</title>
-<?php include 'header.php';?>
-<?php include 'nav.php';?>
-
+<?php include '/inc/header.php';?>
+<?php include '/inc/nav.php';?>
             <div class="l-center-5-6">
                 <div class="l-col-2-12 me-cont">
                     <img class="valign-h2" src = "/images/me-plhldr-240.jpg"
@@ -11,11 +10,11 @@
                                 <480:/images/me-480.jpg,
                                 <600:/images/me-600.jpg,
                                 >720:/images/me-720.jpg" />
-                <div class="center-text">
-                    <span class="fa fa-2x fa-github-square"></span>&nbsp;&nbsp;
-                    <span class="fa fa-2x fa-twitter-square"></span>&nbsp;&nbsp;
-                    <span class="fa fa-2x fa-facebook-square"></span>
-                </div>
+                    <div class="center-text">
+                        <span class="fa fa-2x fa-github-square"></span>&nbsp;&nbsp;
+                        <span class="fa fa-2x fa-twitter-square"></span>&nbsp;&nbsp;
+                        <span class="fa fa-2x fa-facebook-square"></span>
+                    </div>
                 </div>
                 <div class="l-col-19-24 l-offset-1-24">
                     <div id="post">
@@ -26,7 +25,7 @@
                     </div>
                 </div>
             </div>
-
-<?php include 'footer.php';?>
-<script src="/js/inits.js"></script>
-<?php include 'close.php';?>
+        <?php include '/inc/footer.php';?>
+        <script src="/js/inits.js"></script>
+    </body>
+</html>
