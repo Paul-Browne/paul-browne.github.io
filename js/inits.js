@@ -15,10 +15,8 @@ $(function() {
             render: function () {
                 $('body').addClass('hihi');
                 $('body').removeClass('byebye');
+                epicGrid();
             }
-        },
-        callback: function(){
-            epicGrid();
         }
     });
 });
