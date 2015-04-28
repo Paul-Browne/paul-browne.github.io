@@ -9,7 +9,7 @@ $(function() {
                 $('body').addClass('byebye');
                 $('body').removeClass('hihi');
             }
-        },
+        }
         onEnd: {
             duration: 250,
             render: function () {
