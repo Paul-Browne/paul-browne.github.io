@@ -5,14 +5,14 @@ $(function() {
         pageCacheSize: 1,
         onStart: {
             duration: 250,
-            render: function () {
+            render: function (url, $container) {
                 $('body').addClass('byebye');
                 $('body').removeClass('hihi');
             }
-        };
+        },
         onEnd: {
             duration: 250,
-            render: function () {
+            render: function (url, $container) {
                 $('body').addClass('hihi');
                 $('body').removeClass('byebye');
                 epicGrid();
