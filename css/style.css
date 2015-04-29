@@ -139,14 +139,14 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
   position:absolute;
   -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-  width: 300px;
-  height: 260px;
+  width: 350px;
+  height: 303px;
   overflow:hidden;
 }
 
 #hex-2{
   background:blue;
-  top:150px;
+  top:175px;
   left:260px;
 }
 #hex-3{
@@ -156,12 +156,12 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 }
 #hex-4{
   background:green;
-  top:150px;
+  top:175px;
   left:780px;
 }
 #hex-5{
   background:pink;
-  top:300px;
+  top:350px;
   left:0px;
 }
 
