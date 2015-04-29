@@ -144,24 +144,30 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
   overflow:hidden;
 }
 
+#hex-1{
+  background:blue;
+  top:0px;
+  left:303px;
+}
+
 #hex-2{
   background:blue;
   top:175px;
-  left:260px;
+  left:0px;
 }
 #hex-3{
   background:red;
-  top:0px;
-  left:520px;
+  top:350px;
+  left:303px;
 }
 #hex-4{
   background:green;
-  top:175px;
-  left:780px;
+  top:22175px;
+  left:909px;
 }
 #hex-5{
   background:pink;
-  top:350px;
+  top:22350px;
   left:0px;
 }
 
