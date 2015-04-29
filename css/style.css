@@ -151,8 +151,18 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 }
 #hex-3{
   background:red;
-  top:0;
+  top:0px;
   left:550px;
+}
+#hex-4{
+  background:green;
+  top:130px;
+  left:775px;
+}
+#hex-5{
+  background:pink;
+  top:300px;
+  left:0px;
 }
 
 
