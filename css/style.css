@@ -111,14 +111,6 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
 /* custom styles */
 /* ============= */
 
-
-
-/* print */
-/* ===== */
-@media print{blockquote,img,pre,tr{page-break-inside:avoid}*,*:after,*:before{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href)")"}abbr[title]:after{content:" (" attr(title)")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
-
-/* custom styles */
-/* ============= */
 .logo-container {
   position:relative;
   text-align:center;
@@ -143,8 +135,15 @@ span.initial{float:left;margin-right:.1em;font-size:3.2em;margin-bottom:-.15em}
   margin:0 35px;
 }
 
-.me-cont img {
-  border-radius:6px;
-  margin-bottom:1em;
+.hex{
+  -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  width: 300px;
+  height: 260px;
+  overflow:hidden;
 }
 
+
+/* print */
+/* ===== */
+@media print{blockquote,img,pre,tr{page-break-inside:avoid}*,*:after,*:before{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href)")"}abbr[title]:after{content:" (" attr(title)")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
