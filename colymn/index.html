@@ -1,103 +1,106 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Colymn - A javascript grid system</title>
-        <meta name="description" content="Colymn - A lightweight pure javascript grid system" />
-        <link rel="stylesheet" href="css/compiled.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400italic" rel="stylesheet" type="text/css">
-        <script src="js/compiled.min.js"></script>
-    </head>
-    <body>
-      <div class="fullscreen">
-          <div class="middlize center-text">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colymn - A javascript grid system</title>
+    <meta name="description" content="Colymn - A lightweight pure javascript grid system" />
+    <link rel="stylesheet" href="css/compiled.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400italic" rel="stylesheet" type="text/css">
+    <script src="js/compiled.min.js"></script>
+</head>
+
+<body>
+    <div class="fullscreen">
+        <div class="middlize center-text">
             <h1>Colymn</h1>
             <h2>A lightweight, pure javascript grid system</h2>
         </div>
-      </div>
-      <div class="fullscreen center-text">
+    </div>
+    <div class="fullscreen center-text">
         <h2>Features</h2>
         <div class="tl-col-1-3">
-          <h3>Leightweight</h3>
-          <p>less than 1kb after compression</p>
+            <h3>Leightweight</h3>
+            <p>less than 1kb after compression</p>
         </div>
         <div class="tl-col-1-3">
-          <h3>Responsive</h3>
-          <p>with upto 7 breakpoints</p>
+            <h3>Responsive</h3>
+            <p>with upto 7 breakpoints</p>
         </div>
         <div class="tl-col-1-3">
-          <h3>Compaitible</h3>
-          <p>Works in IE8</p>
+            <h3>Compaitible</h3>
+            <p>Works in IE8</p>
         </div>
         <div class="tl-col-1-3">
-          <h3>Symantic</h3>
-          <p>Write cleaner html! No need to add clearfix containers to content</p>
+            <h3>Symantic</h3>
+            <p>Write cleaner html! No need to add clearfix containers to content</p>
         </div>
         <div class="tl-col-1-3">
-          <h3>Simple</h3>
-          <p>less than 1kb after compression</p>
+            <h3>Simple</h3>
+            <p>less than 1kb after compression</p>
         </div>
         <div class="tl-col-1-3">
-          <h3>features</h3>
-          <p>less than 1kb after compression</p>
+            <h3>features</h3>
+            <p>less than 1kb after compression</p>
         </div>
-      </div>
-      
-      <div class="tl-col-4-5">
-          <h3>set up</h3>
-          <p>1. Include colymn.min.js in the <code>&lt;head&gt;</code></p>
-          <pre><code>&lt;script src="js/colymn.min.js"&gt;&lt;/script&gt;</code></pre>
-          <p>2. Call the plugin before the closing <code>&lt;body&gt;</code> tag</p>
-          <pre><code>  &lt;script&gt;
+    </div>
+
+    <div class="tl-col-4-5">
+        <h3>set up</h3>
+        <p>1. Include colymn.min.js in the <code>&lt;head&gt;</code></p>
+        <pre><code>&lt;script src="js/colymn.min.js"&gt;&lt;/script&gt;</code></pre>
+        <p>2. Call the plugin before the closing <code>&lt;body&gt;</code> tag</p>
+        <pre><code>  &lt;script&gt;
     colymn();
   &lt;/script&gt;
 &lt;/body&gt;</code></pre>
-          <p>simple!</p>
-      </div>
-      
-      <div class="tl-center-4-5">
-          <h3>How to use</h3>
-          <p>There are 3 parts: the prefix, the type and the fraction.</p>
-          <p>The prefix: 'xx', 'pp', 'pl', 'tp', 'tl', 'dt' and 'hd'. These stand for all-sizes, phone-portrait, phone-landscape, tablet-portrait, table-landscape, desktop and full hd monitors</p>
-          <p>Add classes like <code>dt-col-3-4</code></p>
-          
-          <h4>Parallel columns</h4>
-          <pre><code>&lt;div class="dt-col-3-4"&gt;&lt;/div&gt;
+        <p>simple!</p>
+    </div>
+
+    <div class="tl-center-4-5">
+        <h3>How to use</h3>
+        <p>There are 3 parts: the prefix, the type and the fraction.</p>
+        <p>The prefix: 'xx', 'pp', 'pl', 'tp', 'tl', 'dt' and 'hd'. These stand for all-sizes, phone-portrait, phone-landscape, tablet-portrait, table-landscape, desktop and full hd monitors</p>
+        <p>Add classes like <code>dt-col-3-4</code></p>
+
+        <h4>Parallel columns</h4>
+        <pre><code>&lt;div class="dt-col-3-4"&gt;&lt;/div&gt;
 &lt;div class="dt-col-1-4"&gt;&lt;/div&gt;</code></pre>
-        
+
         <div class="result">
-          <div class="dt-col-3-4"></div>
-          <div class="dt-col-1-4"></div>
+            <div class="dt-col-3-4"></div>
+            <div class="dt-col-1-4"></div>
         </div>
-        
-          <h4>Centered columns</h4>
-          <pre><code>&lt;div class="dt-center-3-4"&gt;&lt;/div&gt;</code></pre>
-          
+
+        <h4>Centered columns</h4>
+        <pre><code>&lt;div class="dt-center-3-4"&gt;&lt;/div&gt;</code></pre>
+
         <div class="result">
-          <div class="dt-center-3-4"></div>
+            <div class="dt-center-3-4"></div>
         </div>
-        
-          <h4>offset columns</h4>
-          <pre><code>&lt;div class="dt-col-4-9"&gt;&lt;/div&gt;
+
+        <h4>offset columns</h4>
+        <pre><code>&lt;div class="dt-col-4-9"&gt;&lt;/div&gt;
 &lt;div class="dt-col-3-9 dt-offset-2-9"&gt;&lt;/div&gt;</code></pre>
-          
+
         <div class="result">
-          <div class="dt-col-4-9"></div>
-          <div class="dt-col-3-9 dt-offset-2-9"></div>
+            <div class="dt-col-4-9"></div>
+            <div class="dt-col-3-9 dt-offset-2-9"></div>
         </div>
-        
-      </div>
-      <div class="tl-center-4-5">
-      
-      
-      
-      </div>
-      
-        
-        <script>
-            colymn();
-        </script>
-        </body>
+
+    </div>
+    <div class="tl-center-4-5">
+
+
+
+    </div>
+
+
+    <script>
+        colymn();
+    </script>
+</body>
+
 </html>
