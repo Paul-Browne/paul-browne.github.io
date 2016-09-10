@@ -96,227 +96,413 @@
         
     </div>
 
-    <div class="all-center-4-5">
-        <h3>How to use</h3>
-        <p>There are <b>3 parts:</b> the <b>prefix,</b> the <b>type</b> and the <b>amount.</b></p>
-        <p>The <b>prefix:</b></p>
-                    <table class="table">
-                <thead>
-                    <tr>
-                        <th>prefix</th>
-                        <th>device</th>
-                        <th>size</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>xx-</code></td>
-                        <td><p>all devices</p></td>
-                        <td><p>greater than 0 pixels wide</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>pp-</code></td>
-                        <td><p>phone portrait</p></td>
-                        <td><p>greater than 300 pixels wide and in portrait</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>pl-</code></td>
-                        <td><p>phone landscape</p></td>
-                        <td><p>greater than 300 pixels wide and in landscape</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>tp-</code></td>
-                        <td><p>tablet landscape</p></td>
-                        <td><p>greater than 440 pixels wide and in portrait</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>tl-</code></td>
-                        <td><p>tablet landscape</p></td>
-                        <td><p>greater than 640 pixels wide and in landscape</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>dt-</code></td>
-                        <td><p>desktop</p></td>
-                        <td><p>greater than 1024 pixels wide</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>hd-</code></td>
-                        <td><p>Full HD</p></td>
-                        <td><p>greater than 1440 pixels wide</p></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-        <p>The <b>type:</b></p>
-                    <table class="table">
-                <thead>
-                    <tr>
-                        <th>type</th>
-                        <th>device</th>
-                        <th>rules</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>col-</code></td>
-                        <td><p>column</p></td>
-                        <td><p></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>center-</code></td>
-                        <td><p>1 column, centered</p></td>
-                        <td><p></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>offset-</code></td>
-                        <td><p>offset a column to the right</p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>left-</code></td>
-                        <td><p>push/displace a column to the left</p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>right-</code></td>
-                        <td><p>push/displace a column to the right</p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-        
-        
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>type</th>
-                        <th>device</th>
-                        <th>rules</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>prefix-col-x-y</code></td>
-                        <td><p>defines column of width x from a total of y</p></td>
-                        
-                    </tr>
-                    <tr>
-                        <td><code>prefix-center-x-y</code></td>
-                        <td><p>defines one centered column of width x from a total of y</p></td>
-                        <td><p></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>prefix-center-x(px|em)</code></td>
-                        <td><p>defines one centered column of a fixed width x, in either pixels or ems</p></td>
-                        <td><p></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>prefix-offset-x-y</code></td>
-                        <td><p>offsets a given column (not centered columns) </p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>prefix-left-X-Y</code></td>
-                        <td><p>push/displace a column to the left</p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                    <tr>
-                        <td><code>prefix-right-X-Y</code></td>
-                        <td><p>push/displace a column to the right</p></td>
-                        <td><p>must be accompanied with a <code>col-</code> type</p></td>
-                    </tr>
-                </tbody>
-            </table>
-        
+<article class="markdown-body entry-content" itemprop="text"><h2><a id="user-content-colymn" class="anchor" href="#colymn" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>colymn</h2>
 
-        <h4>Parallel columns</h4>
-<pre><code>&lt;div class="dt-col-3-4"&gt;&lt;/div&gt;&lt;div class="dt-col-1-4"&gt;&lt;/div&gt;
-&lt;div class="dt-col-1-3"&gt;&lt;/div&gt;&lt;div class="dt-col-1-3"&gt;&lt;/div&gt;&lt;div class="dt-col-1-3"&gt;&lt;/div&gt;
-&lt;div class="dt-col-2-5"&gt;&lt;/div&gt;&lt;div class="dt-col-3-5"&gt;&lt;/div&gt;
-&lt;div class="dt-col-6-19"&gt;&lt;/div&gt;&lt;div class="dt-col-5-17"&gt;&lt;/div&gt;&lt;div class="dt-col-126-323"&gt;&lt;/div&gt;</code></pre>
+<h5><a id="user-content-an-infinite-possibilities-grid-system---let-colymn-do-the-maths-allowing-you-to-use-whatever-grid-style-you-like" class="anchor" href="#an-infinite-possibilities-grid-system---let-colymn-do-the-maths-allowing-you-to-use-whatever-grid-style-you-like" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>An infinite possibilities Grid System - let colymn do the maths, allowing you to use whatever grid style you like.</h5>
 
-        <div class="result">
-            <div class="dt-col-3-4"></div>
-            <div class="dt-col-1-4"></div>
-            
-            <div class="dt-col-1-3"></div>
-            <div class="dt-col-1-3"></div>
-            <div class="dt-col-1-3"></div>
-            
-            <div class="dt-col-2-5"></div>
-            <div class="dt-col-3-5"></div>
-            
-            <div class="dt-col-6-19"></div>
-            <div class="dt-col-5-17"></div>
-            <div class="dt-col-126-323"></div>
-        </div>
+<h4><a id="user-content-features" class="anchor" href="#features" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h4>
 
-        <h4>Centered columns</h4>
-        <pre><code>&lt;div class="dt-center-31-44"&gt;&lt;/div&gt;</code></pre>
+<ul>
+<li>no dependencies - written in pure javascript</li>
+<li>lightweight - ~1kb when minified and gzipped.</li>
+<li>easy to use - if you can use fractions, you can use colymn</li>
+<li>responsive - includes upto 8 breakpoints - reacts to resize events</li>
+<li>no clearfix containers! - automagically calculates where to clear floats</li>
+</ul>
 
-        <div class="result">
-            <div class="dt-center-5-11"></div>
-            <div class="dt-center-13-20"></div>
-            <div class="dt-center-8-10"></div>
-            <div class="dt-center-97-107"></div>
-            <div class="dt-center-31-33"></div>
-        </div>
+<hr>
 
-        <h4>offset columns</h4>
-        <pre><code>&lt;div class="dt-col-4-9"&gt;&lt;/div&gt;
-&lt;div class="dt-col-3-9 dt-offset-2-9"&gt;&lt;/div&gt;</code></pre>
+<h4><a id="user-content-setup" class="anchor" href="#setup" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup</h4>
 
-        <div class="result">
-            <div class="dt-col-4-9"></div>
-            <div class="dt-col-3-9 dt-offset-2-9"></div>
-            
-            <div class="dt-col-4-15 dt-offset-1-15"></div>
-            <div class="dt-col-4-15 dt-offset-1-15"></div>
-            <div class="dt-col-4-15 dt-offset-1-15"></div>
-            
-            <div class="dt-col-1-3 dt-offset-1-3"></div>
-            <div class="dt-col-3-9"></div>
-        </div>
-        
-        <h4>displaced columns</h4>
-        <pre><code>&lt;div class="dt-center-5-6"&gt;
-  &lt;div class="dt-col-5-8 dt-left-1-12"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<p>include in the <code>&lt;head&gt;</code> and call before the closing <code>&lt;/body&gt;</code></p>
 
-        <div class="result">
-            <div class="dt-center-5-6">
-                <div class="dt-col-3-8 dt-left-0-1"></div>
-            </div>
-            <div class="dt-center-5-6">
-                <div class="dt-col-6-11 dt-left-1-12"></div>
-            </div>
-            <div class="dt-center-5-6">
-                <div class="dt-col-3-5 dt-right-0-1"></div>
-            </div>
-            <div class="dt-center-5-6">
-                <div class="dt-col-2-3 dt-right-1-12"></div>
-            </div>
-        </div>
-        
-        <h4>hidden columns</h4>
-        <pre><code>&lt;div class="dt-center-5-6"&gt;
-  &lt;div class="dt-col-5-8 dt-left-1-12"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/colymn.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;
 
-        <div class="result">
-            <div class="dt-col-1-3"></div>
-            <div class="dt-col-0-1"></div>
-            <div class="dt-col-1-3"></div>
-            <div class="dt-col-1-3"></div>
-        </div>
+<span class="pl-s1">  &lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    <span class="pl-en">colymn</span>();</span>
+<span class="pl-s1">  &lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
-    </div>
-    <div class="tl-center-4-5">
+<p>or with options</p>
 
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1">  &lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    <span class="pl-en">colymn</span>({</span>
+<span class="pl-s1">      margin<span class="pl-k">:</span> <span class="pl-c1">4</span>,</span>
+<span class="pl-s1">      phone<span class="pl-k">:</span> <span class="pl-c1">680</span>, <span class="pl-c">// upto 680px</span></span>
+<span class="pl-s1">      tablet<span class="pl-k">:</span> <span class="pl-c1">1040</span>, <span class="pl-c">// upto 1040px</span></span>
+<span class="pl-s1">      desktop<span class="pl-k">:</span> <span class="pl-c1">1400</span>, <span class="pl-c">//greater than 1400px</span></span>
+<span class="pl-s1">     });</span>
+<span class="pl-s1">  &lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
 
+<hr>
 
-    </div>
+<h4><a id="user-content-how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to use</h4>
+
+<p>You write column widths like so <code>prefix-col-X-Y</code>, where <code>X ÷ Y</code> is the columns width and the <code>prefix</code> is either <code>all</code>, <code>phone</code>, <code>phone-portrait</code>, <code>phone-landscape</code>, <code>tablet</code>, <code>tablet-portrait</code>, <code>tablet-landscape</code>, <code>laptop</code> or <code>desktop</code>, these represent the different screen sizes. (defaults shown)</p>
+
+<table><thead>
+<tr>
+<th>type</th>
+<th>Prefix</th>
+<th>Size</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>cross browser</td>
+<td><code>all</code></td>
+<td><code>all sizes</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td><code>phone</code></td>
+<td><code>less than 680px wide</code></td>
+</tr>
+<tr>
+<td>phone: portrait</td>
+<td><code>phone-portrait</code></td>
+<td><code>less than 680px wide &amp; height greater than width</code></td>
+</tr>
+<tr>
+<td>phone: landscape</td>
+<td><code>phone-landscape</code></td>
+<td><code>less than 680px wide &amp; width greater than height</code></td>
+</tr>
+<tr>
+<td>tablet</td>
+<td><code>tablet</code></td>
+<td><code>greater than 680px and less than 1040px wide</code></td>
+</tr>
+<tr>
+<td>tablet: portrait</td>
+<td><code>tablet-portrait</code></td>
+<td><code>greater than 680px and less than 1040px wide &amp; height greater than width</code></td>
+</tr>
+<tr>
+<td>tablet: landscape</td>
+<td><code>tablet-landscape</code></td>
+<td><code>greater than 680px and less than 1040px wide &amp; width greater than height</code></td>
+</tr>
+<tr>
+<td>laptop</td>
+<td><code>laptop</code></td>
+<td><code>greater than 1040px</code></td>
+</tr>
+<tr>
+<td>desktop</td>
+<td><code>desktop</code></td>
+<td><code>greater than 1400px</code></td>
+</tr>
+</tbody></table>
+
+<hr>
+
+<h4><a id="user-content-simple-column-example" class="anchor" href="#simple-column-example" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Column Example</h4>
+
+<p>The bread-and-butter of any grid system is its ability to create columns. colymn does this like so...</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>sidebar<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>This markup would result in 2 columns - a main and a sidebar, three quarters and one quarter wide, respectively.
+...but you probably wouldn't want two columns on mobile, so you could write something like this</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-4 phone-center-6-7<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-center-6-7 all-col-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>sidebar<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- note: it doesn't matter what order you write the classes --&gt;</span></pre></div>
+
+<p>This markup would result in 2 columns on everything <em>except</em> mobiles, on which both columns would be 85% wide, with the sidebar beneath the main column.</p>
+
+<hr>
+
+<h4><a id="user-content-simple-centered-example" class="anchor" href="#simple-centered-example" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Centered Example</h4>
+
+<p>Centered columns are columns that are centered - shocker!</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-6-7 laptop-center-3-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>first<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-6-7 laptop-center-3-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>second<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>On all devices both columns will be six sevenths wide and centered up until devices with a screen size greater than 1040px wide, where both columns will be three quarters wide and centered.</p>
+
+<p>you can also center a column with a <strong>fixed</strong> width in either pixels or ems</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>desktop-center-960px<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>first<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>desktop-center-60em<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>second<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>In the above example you would get a centered column 960px and 60em wide, when viewed on a desktop</p>
+
+<h6><a id="user-content-note" class="anchor" href="#note" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>The <code>all</code> class acts as shorthand to target all devices.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-6-7<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- is the same as --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-center-6-7 tablet-center-6-7 laptop-center-6-7 desktop-center-6-7<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>and you can omit the <code>desktop</code> if you have a specified for <code>laptop</code></p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>laptop-center-6-7<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- is the same as --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>laptop-center-6-7 desktop-center-6-7<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>also, how you target devices is up to you, for instance</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-4 phone-center-6-7<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- is the same as --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-center-6-7 tabet-col-3-4 laptop-col-3-4<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<hr>
+
+<h4><a id="user-content-portrait-and-landscape" class="anchor" href="#portrait-and-landscape" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>portrait and landscape</h4>
+
+<p>If you want to get more granular with your devices, then you can also specify <code>portrait</code> and <code>landscape</code> for phones and tablets</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-4 phone-portrait-center-5-6 tablet-portrait-center-7-8<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4 phone-portrait-center-5-6 tablet-portrait-center-7-8<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>sidebar<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>so, in the above example the main column will be three quarters wide, except on phones and tablets when in portrait, at which point they will be five sixth wide and seven eighths wide, respectively.</p>
+
+<h6><a id="user-content-note-1" class="anchor" href="#note-1" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-center-5-6 phone-landscape-col-1-2<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- is the same as --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-portrait-center-5-6 phone-landscape-col-1-2<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h4><a id="user-content-simple-offset-example" class="anchor" href="#simple-offset-example" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Offset Example</h4>
+
+<p>Offsetting a column will push it to the right by the desired amount.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>first<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4 all-offset-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>second<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>third<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>In this example the second column is offset - pushed to the right, by one quarters width. </p>
+
+<h6><a id="user-content-note-2" class="anchor" href="#note-2" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>Notice how all the columns widths plus the offset equal one ¼ + ¼ + ¼ + ¼ = 1, this is to ensure that the row of columns is cleared after the last column - columns are cleared after the total widths plus offsets equals one.</p>
+
+<p>A centered column cannot be offset.</p>
+
+<hr>
+
+<h4><a id="user-content-simple-displaced-column-example---aligned-to-the-parents-margin" class="anchor" href="#simple-displaced-column-example---aligned-to-the-parents-margin" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Displaced Column Example - aligned to the parents margin</h4>
+
+<p>You can displace (push or pull) columns to the left or right in order to let content in the parent column (eg. text) flow around the displaced column.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-8-10<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h1</span>&gt;...&lt;/<span class="pl-ent">h1</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>tablet-landscape-col-3-5 laptop-col-3-5 tablet-landscape-left-0-1 laptop-left-0-1<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>left<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">h2</span>&gt;...&lt;/<span class="pl-ent">h2</span>&gt;
+        &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>The class <code>laptop-left-0-1</code> would result in a column being displaced to the left and aligned to the left margin of Its parent column (main)
+The class <code>laptop-col-3-5</code> specifies the width of the displaced column</p>
+
+<hr>
+
+<h4><a id="user-content-simple-displaced-column-example---pushed-through-the-parents-margin" class="anchor" href="#simple-displaced-column-example---pushed-through-the-parents-margin" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Displaced Column Example - pushed through the parents margin</h4>
+
+<p>You can also displace columns through the left or right margin of Its parent.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-8-10<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h1</span>&gt;...&lt;/<span class="pl-ent">h1</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-5 all-left-1-10<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>left<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">h2</span>&gt;...&lt;/<span class="pl-ent">h2</span>&gt;
+        &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">p</span>&gt;...&lt;/<span class="pl-ent">p</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Since the main column is eight tenths wide and centered, that leaves one tenth of free space on either side. By adding the class <code>all-left-1-10</code> the displaced column is pushed through Its parents left margin by one tenth </p>
+
+<h6><a id="user-content-note-3" class="anchor" href="#note-3" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>Since displaced columns are floated, but not cleared, make sure the content in Its parent column is longer than that in the displaced column.</p>
+
+<p>A centered column cannot be displaced.</p>
+
+<hr>
+
+<h4><a id="user-content-simple-nested-example" class="anchor" href="#simple-nested-example" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple Nested Example</h4>
+
+<p>Infinite nesting of columns is possible, just remember; the more you nest, the smaller the columns will become.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-9-10<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>first<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>second<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-center-12-13<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>third<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-4-8 all-offset-1-8<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>fourth<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-8<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>fifth<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-4<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>sixth<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h6><a id="user-content-note-4" class="anchor" href="#note-4" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>In the above example the <code>fifth</code> column would only be about 20% of the total viewport wide. </p>
+
+<hr>
+
+<h5><a id="user-content-auto-clearing-of-floats" class="anchor" href="#auto-clearing-of-floats" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Auto clearing of floats</h5>
+
+<p>clear-floats are added automatically, independently for each viewport. They are also removed, then re-added everytime a user resizes their device.</p>
+
+<p>In this example you can see how the auto-insertion of "clear-floats" allows you to create layouts that would be impossible when using standard clearfix containers.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-col-1-2 tablet-col-1-3 laptop-col-1-4 desktop-1-5<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-col-1-2 tablet-col-1-3 laptop-col-1-4 desktop-1-5<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- clear float --&gt;</span>        <span class="pl-c">&lt;!-- for phone --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-col-1-2 tablet-col-1-3 laptop-col-1-4 desktop-1-5<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- clear float --&gt;</span>        <span class="pl-c">&lt;!-- for tablet --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-col-1-2 tablet-col-1-3 laptop-col-1-4 desktop-1-5<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- clear float --&gt;</span>        <span class="pl-c">&lt;!-- for phone and laptop --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>phone-col-1-2 tablet-col-1-3 laptop-col-1-4 desktop-1-5<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">&lt;!-- clear float --&gt;</span>        <span class="pl-c">&lt;!-- for desktop --&gt;</span>
+</pre></div>
+
+<h6><a id="user-content-note-5" class="anchor" href="#note-5" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>The comments show where, and for what device the clear-floats are added</p>
+
+<hr>
+
+<h4><a id="user-content-demo" class="anchor" href="#demo" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://jsbin.com/peloxiy">Demo</a></h4>
+
+<hr>
+
+<h4><a id="user-content-nomenclature" class="anchor" href="#nomenclature" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nomenclature</h4>
+
+<table><thead>
+<tr>
+<th>Class Names cheatsheet</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>prefix-col-x-y</code></td>
+<td>A column for the chosen viewport. X number of columns wide from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-center-x-y</code></td>
+<td>Center the column for that viewport. X number of columns wide from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-center-x(px|em)</code></td>
+<td>Center the column for that viewport. X number of <strong>pixels or ems</strong></td>
+</tr>
+<tr>
+<td><code>prefix-offset-x-y</code></td>
+<td>Offset the column to the right by X number of columns from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-left-x-y</code></td>
+<td>Displace a column to the left by X number of columns from a total of Y</td>
+</tr>
+<tr>
+<td><code>prefix-right-x-y</code></td>
+<td>Displace a column to the right by X number of columns from a total of Y</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>choose one of the prefixes <code>all</code>, <code>phone</code>, <code>phone-portrait</code>, <code>phone-landscape</code>, <code>tablet</code>, <code>tablet-portrait</code>, <code>tablet-landscape</code>, <code>laptop</code> or <code>desktop</code> for that viewport</li>
+<li>classes <code>left</code>, <code>right</code> and <code>offset</code> must be accompanied with a <code>col</code> class to specify width.
+___</li>
+</ul>
+
+<h4><a id="user-content-html-helper-classes" class="anchor" href="#html-helper-classes" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>html helper classes</h4>
+
+<p>Since this grid system is written in javascript and not css, I have added some helper classes that attach themselves to the root <code>html</code> element of the documet, so that you can match up the grid system in your css. So for example when on a tablet in landscape these classes will be added to the html element <code>&lt;html class="tablet landscape"&gt;</code> This way you can match the style like so</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.some-element</span> { <span class="pl-c">/* all */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.phone</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* phones */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.phone.portrait</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* phones in portrait only */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.phone.landscape</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* phones in landscape only */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.tablet</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* tablets */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.tablet.portrait</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* tablets in portrait only */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.tablet.landscape</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* tablets in landscape only */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.laptop</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* laptops */</span> }
+<span class="pl-ent">html</span><span class="pl-e">.desktop</span> <span class="pl-e">.some-element</span> { <span class="pl-c">/* desktops */</span> }</pre></div>
+
+<h6><a id="user-content-note-6" class="anchor" href="#note-6" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h6>
+
+<p>On desktop both the classes <code>&lt;html class="laptop desktop"&gt;</code> will be present, this is intentional as to mimic the way the grid inheritence works. If you write your css in a 'mobile first' approach, as above, then it won't be a problem.</p>
+
+<h4><a id="user-content-questions" class="anchor" href="#questions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Questions</h4>
+
+<blockquote>
+<p>Can I mix my column sizes?</p>
+
+<p>Yes, you can use any mixture of wierd and wonderful fractions such as;</p>
+</blockquote>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-1-6<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-2-18<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-2-14<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-10<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-3-20<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>all-col-4-31<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Just so long as they all add up to 1</p>
+
+<blockquote>
+<p>How accurate are the terms 'phone' and 'tablet'</p>
+
+<p>About as accurate as possible without using a lot of javascript to detect user agents etc. Either way all ipads come under tablets and iphones come under phones, as do samsung galaxys. The most common phones and tablets get catagorized correctly. Some phablets may come under tablets, others will be phones.</p>
+
+<p>When i resize my browser past a breakpoint the layout doesn't always update immediately</p>
+
+<p>This is intentional. I added a debounced resize so that the layout isn't been recalculated every time the viewport changes by a pixel. Basically the viewport has to stay the samesize, after been resized, for one-fifth of a second (200ms) before the layout is recalculated. </p>
+</blockquote>
+
+<hr>
+
+<h4><a id="user-content-version" class="anchor" href="#version" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>version</h4>
+
+<h6><a id="user-content-21" class="anchor" href="#21" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1</h6>
+
+<ul>
+<li>adds html helper classes</li>
+</ul>
+
+<h6><a id="user-content-2" class="anchor" href="#2" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2</h6>
+
+<ul>
+<li>major update</li>
+</ul>
+
+<h6><a id="user-content-14" class="anchor" href="#14" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.4</h6>
+
+<ul>
+<li>added options</li>
+</ul>
+
+<h6><a id="user-content-13" class="anchor" href="#13" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3</h6>
+
+<ul>
+<li>added fixed width containers</li>
+</ul>
+
+<h6><a id="user-content-12" class="anchor" href="#12" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2</h6>
+
+<ul>
+<li>bugfix - excluded svg elements</li>
+</ul>
+
+<h6><a id="user-content-11" class="anchor" href="#11" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1</h6>
+
+<ul>
+<li>initial release</li>
+<li>inherited from epicGrid</li>
+</ul>
+</article>
 
 
     <script>
