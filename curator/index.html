@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>curator</title>
+    <link rel="stylesheet" href="/css/main.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+
+    <style>
+        section > h1.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 25.2px, #70B5D5 25.2px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 25.2px,#70B5D5 25.2px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 25.2px, #70B5D5 25.2px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 0.5em;
+        }
+        section > h2.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 24.84px, #70B5D5 24.84px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 24.84px,#70B5D5 24.84px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 24.84px, #70B5D5 24.84px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 0.6em;
+        }
+        section > h3.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 21.4px, #70B5D5 21.4px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 21.4px,#70B5D5 21.4px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 21.4px, #70B5D5 21.4px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 0.7em;
+        }
+        section > h4.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 17.3px, #70B5D5 17.3px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 17.3px,#70B5D5 17.3px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 17.3px, #70B5D5 17.3px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 0.8em;
+        }
+        section > h5.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 14.4px, #70B5D5 14.4px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 14.4px,#70B5D5 14.4px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 14.4px, #70B5D5 14.4px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 1em;
+        }
+        section > h6.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 11.88px, #70B5D5 11.88px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 11.88px,#70B5D5 11.88px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 11.88px, #70B5D5 11.88px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 1em;
+        }
+        section > p.text:hover {
+            background: -moz-linear-gradient(bottom, #FFCFA3 0%, #FFCFA3 18px, #70B5D5 18px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(bottom, #FFCFA3 0%,#FFCFA3 18px,#70B5D5 18px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to top, #FFCFA3 0%, #FFCFA3 18px, #70B5D5 18px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-bottom: 0em;
+            padding-bottom: 1em;
+        }
+        section > blockquote.text:hover {
+            background: -moz-linear-gradient(right, #A3FFB3 0%, #A3FFB3 54px, #70B5D5 54px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(right, #A3FFB3 0%,#A3FFB3 54px,#70B5D5 54px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #A3FFB3 0%, #A3FFB3 54px, #70B5D5 54px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+        }
+        section ul.text:hover,
+        section ol.text:hover {
+            background: -moz-linear-gradient(right, #A3FFB3 0%, #A3FFB3 36px, #70B5D5 36px, #70B5D5 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(right, #A3FFB3 0%,#A3FFB3 36px,#70B5D5 36px,#70B5D5 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #A3FFB3 0%, #A3FFB3 36px, #70B5D5 36px, #70B5D5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+        section ul.text:hover:before,
+        section ol.text:hover:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 1em;
+            background: #FFCFA3;
+        }
+        section ul.text:hover:after,
+        section ol.text:hover:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            height: 1em;
+            background: #FFCFA3;
+        }
+        .stats {
+            transition: 0.3s all;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 1em;
+            font-size: 12px;
+            font-family: monospace;
+            opacity: 0;
+        }
+        .stats code{
+            white-space: pre;
+            margin: 0;
+        }
+        section .text:hover + div.stats {
+            opacity: 1;
+            background-color: #eee;
+        }
+        .red {
+            color: #e90000;
+        }
+        .comment {
+            color: #bbb;
+        }
+
+    </style>
+</head>
+<body class="all-center-7-8">
+    <section class="" id="typography">
+        <h1 class="text">Xenophobic quizmaster vilified jaywalking</h1>
+        <div class="stats">
+            <code>h1 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 2.8em;
+  <span class="red">margin-bottom</span>: 0.5em;
+}</code>
+        </div>
+        <h2 class="text">Xenophobic quizmaster vilified jaywalking</h2>
+        <div class="stats">
+            <code>h2 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 2.3em;
+  <span class="red">margin-bottom</span>: 0.6em;
+}</code>
+        </div>
+        <h3 class="text">Xenophobic quizmaster vilified jaywalking</h3>
+        <div class="stats">
+            <code>h3 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 1.7em;
+  <span class="red">margin-bottom</span>: 0.7em;
+}</code>
+        </div>
+        <h4 class="text">Xenophobic quizmaster vilified jaywalking</h4>
+        <div class="stats">
+            <code>h4 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 1.2em;
+  <span class="red">margin-bottom</span>: 0.8em;
+}</code>
+        </div>
+        <h5 class="text">Xenophobic quizmaster vilified jaywalking</h5>
+        <div class="stats">
+            <code>h5 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 0.8em;
+  <span class="red">margin-bottom</span>: 1em;
+}</code>
+        </div>
+        <h6 class="text">Xenophobic quizmaster vilified jaywalking</h6>
+        <div class="stats">
+            <code>h6 {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 0.66em;
+  <span class="red">margin-bottom</span>: 1em;
+}</code>
+        </div>
+        <p class="text">Xenophobic quizmaster vilified jaywalking</p>
+        <div class="stats">
+            <code>p {
+  <span class="red">font-family</span>: libre baskerville;
+  <span class="red">font-weight</span>: 400;
+  <span class="red">font-size</span>: 1.125em; <span class="comment">// body</span>
+  <span class="red">margin-bottom</span>: 1em;
+  <span class="red">line-height</span>: 1.4; <span class="comment">// body</span>
+}</code>
+        </div>
+
+        <blockquote class="text" cite="http://">
+            Xenophobic quizmaster vilified jaywalking Xenophobic quizmaster vilified jaywalking Xenophobic quizmaster vilified jaywalking Xenophobic quizmaster vilified jaywalking
+        </blockquote>
+        <div class="stats">
+        <code>blockquote {
+  <span class="red">position</span>: relative;
+  <span class="red">margin</span>: 0;
+  <span class="red">padding-left</span>: 54px;
+}
+blockquote:before {
+  <span class="red">position</span>: absolute;
+  <span class="red">font-size</span>: 126px;
+  <span class="red">top</span>: 4px;
+  <span class="red">left</span>: -4px;
+  <span class="red">line-height</span>: 1;
+  <span class="red">opacity</span>: 0.5;
+  <span class="red">content</span>: '\201d';
+}</code>
+        </div>
+        <a class="text" href="#">Xenophobic</a>
+        <div class="stats">
+        <code>a {
+  <span class="red">color</span>: #43F;
+  <span class="red">text-decoration</span>: none;
+}
+a:visited {
+  <span class="red">color</span>: #F34;
+}
+a:active,a:hover {
+  <span class="red">color</span>: #43F;
+  <span class="red">outline</span>: 0;
+}</code>
+        </div>
+        <small class="text">quizmaster</small>
+        <div class="stats">
+        <code>small {
+  <span class="red">font-size</span>: 75%;
+}</code>
+        </div>
+        <em class="text">vilified</em>
+        <div class="stats">
+        <code>em, i {
+  <span class="red">font-style</span>: italic;
+}</code>
+        </div>
+        <b class="text">jaywalking</b>
+        <div class="stats">
+        <code>strong, b {
+  <span class="red">font-weight</span>: 700;
+}</code>
+        </div>
+        <q class="text">xenophobic</q>
+        <div class="stats">
+        <code>q:before,q:after {
+  <span class="red">font-size</span>: 1.15em;
+}
+q:before {
+  <span class="red">content</span>: "\201c";
+}
+q:after {
+  <span class="red">content</span>: "\201d";
+}</code>
+        </div>
+        <ins class="text">quizmaster</ins>
+        <div class="stats">
+        <code>ins {
+  <span class="red">text-decoration</span>: underline;
+}</code>
+        </div>
+        <del class="text">vilified</del>
+        <div class="stats">
+        <code>del {
+  <span class="red">text-decoration</span>: line-through;
+}</code>
+        </div>
+        <code class="text">jaywalking</code>
+        <div class="stats">
+        <code>code {
+  <span class="red">font-family</span>: monospace;
+  <span class="red">font-size</span>: 1em;
+}</code>
+        </div>
+        <sub class="text">xenophobic</sub>
+        <div class="stats">
+        <code>sub,sup {
+  <span class="red">font-size</span>: 75%;
+  <span class="red">line-height</span>: 0;
+  <span class="red">position</span>: relative;
+}
+sub {
+  <span class="red">bottom</span>: -.25em;
+}</code>
+        </div>
+        <sup class="text">quizmaster</sup>
+        <div class="stats">
+          <code>sub,sup {
+  <span class="red">font-size</span>: 75%;
+  <span class="red">line-height</span>: 0;
+  <span class="red">position</span>: relative;
+}
+sup {
+  <span class="red">top</span>: .5em;
+}</code>
+        </div>
+        <abbr class="text" title="vilified">vilified</abbr>
+        <div class="stats">
+        <code>abbr[title] {
+  <span class="red">border-bottom</span>: 1px dashed;
+  <span class="red">text-decoration</span>: none;
+}</code>
+        </div>
+        <mark class="text">jaywalking</mark>
+        <div class="stats">
+        <code>mark {
+  <span class="red">color</span>: #000;
+  <span class="red">background</span>: #ff0;
+}</code>
+        </div>
+    </section>
+
+    <section class="" id="lists">
+      <div class="all-col-1-2 phone-center-1-1">
+
+    <ul class="text">
+      <li>Milk</li>
+      <li>Fish
+          <ul>
+            <li>Salmon</li>
+            <li>Trout
+                <ul>
+                  <li>French</li>
+                  <li>German</li>
+                  <li>Spanish</li>
+                </ul>
+            </li>
+            <li>Cod</li>
+          </ul>
+      </li>
+      <li>Eggs</li>
+    </ul>
+    <div class="stats">
+    <code>ul {
+  <span class="red">padding-left</span>: 36px;
+  <span class="red">margin</span>: 1em 0;
+}
+ul ul {
+  <span class="red">margin</span>: 0;
+}</code>
+    </div>
+</div>
+<div class="all-col-1-2 phone-center-1-1">
+    <ol class="text">
+      <li>Milk</li>
+      <li>Fish
+          <ol>
+            <li>Salmon</li>
+            <li>Trout
+                <ol>
+                  <li>French</li>
+                  <li>German</li>
+                  <li>Spanish</li>
+                </ol>
+            </li>
+            <li>Cod</li>
+          </ol>
+      </li>
+      <li>Eggs</li>
+    </ol>
+    <div class="stats">
+    <code>ol {
+  <span class="red">padding-left</span>: 36px;
+  <span class="red">margin</span>: 1em 0;
+ol ol {
+  <span class="red">margin</span>: 0;
+  <span class="red">list-style-type</span>: lower-alpha;
+}
+ol ol ol {
+  <span class="red">list-style-type</span>: lower-roman;
+}</code>
+    </div>
+
+</div>
+
+
+    </section>
+
+    <section class="" id="tables">
+    </section>
+
+    <section class="" id="buttons">
+    </section>
+
+    <div class="all-col-1-3">
+    </div>
+    <div class="all-col-1-3">
+    </div>
+    <div class="all-col-1-3">
+    </div>
+
+
+    <script src="/js/colymn.js"></script>
+    <script>
+        colymn();
+    </script>
+</body>
+
+</html>
