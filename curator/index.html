@@ -108,6 +108,10 @@
             white-space: pre;
             margin: 0;
         }
+        section {
+            position: relative;
+            margin: 3em auto;
+        }
         section .text:hover + div.stats {
             opacity: 1;
             background-color: #eee;
@@ -119,10 +123,42 @@
             color: #bbb;
         }
 
+        section.section:before {
+            position: absolute;
+            top: 14px;
+            font-family: libre baskerville;
+            transform: rotate(90deg);
+            transform-origin: left top 0;
+            opacity: 0.1;
+            font-size: 2em;
+        }
+        #typography:before {
+            content: "Typography";
+        }
+        #lists:before {
+            content: "Lists";
+        }
+        #buttons:before {
+            content: "Buttons";
+        }
+        #tables:before {
+            content: "Tables";
+        }
+        #grid-system:before {
+            content: "Grid System";
+        }
+
+        .gt {
+            height: 30px;
+            background-color: purple;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+
     </style>
 </head>
 <body class="all-center-7-8">
-    <section class="" id="typography">
+    <section class="section" id="typography">
         <h1 class="text">Xenophobic quizmaster vilified jaywalking</h1>
         <div class="stats">
             <code>h1 {
@@ -308,7 +344,7 @@ sup {
         </div>
     </section>
 
-    <section class="" id="lists">
+    <section class="section" id="lists">
       <div class="all-col-1-2 phone-center-1-1">
 
     <ul class="text">
@@ -370,25 +406,128 @@ ol ol ol {
     </div>
 
 </div>
+    </section>
 
+    <section class="section" id="tables">
+
+      <table class="table" data-sortable>
+          <thead>
+              <tr>
+                  <th data-sortable="false">Name</th>
+                  <th data-sorted="true">Nationality</th>
+                  <th data-sorted="true">Sales</th>
+                  <th data-sorted="true" data-sorted-direction="descending">Total Value</th>
+                  <th data-sorted="true">Age</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John Johnson</td>
+                  <td>British</td>
+                  <td>6</td>
+                  <td data-value="18500">£12,000</td>
+                  <td>35</td>
+              </tr>
+              <tr>
+                  <td>Paul Paulson</td>
+                  <td>American</td>
+                  <td>5</td>
+                  <td data-value="15000">$15,000</td>
+                  <td>27</td>
+              </tr>
+              <tr>
+                  <td>Berti Beiger</td>
+                  <td>German</td>
+                  <td>8</td>
+                  <td data-value="17850">16,000€</td>
+                  <td>23</td>
+              </tr>
+              <tr>
+                  <td>Ivan Drago</td>
+                  <td>Russian</td>
+                  <td>8</td>
+                  <td data-value="14500">900,000 Rubles</td>
+                  <td>40</td>
+              </tr>
+              <tr>
+                  <td>Zara Zapruda</td>
+                  <td>South African</td>
+                  <td>10</td>
+                  <td data-value="14450">170,000R</td>
+                  <td>33</td>
+              </tr>
+          </tbody>
+      </table>
 
     </section>
 
-    <section class="" id="tables">
+    <section class="section" id="buttons">
+      <div>
+        <button class="btn-blue" type="button" name="button">Download</button>
+        <button class="btn-blue floating" type="button" name="button">Download</button>
+        <br><br>
+        <button class="btn-red" type="button" name="button">Download</button>
+        <button class="btn-red floating" type="button" name="button">Download</button>
+        <br><br>
+        <button class="btn-green" type="button" name="button">Download</button>
+        <button class="btn-green floating" type="button" name="button">Download</button>
+      </div>
+
+      <div>
+        <a class="btn-blue" href="#">Download</a>
+        <a class="btn-blue floating" href="#">Download</a>
+        <br><br>
+        <a class="btn-red" href="#">Download</a>
+        <a class="btn-red floating" href="#">Download</a>
+        <br><br>
+        <a class="btn-green" href="#">Download</a>
+        <a class="btn-green floating" href="#">Download</a>
+      </div>
+
     </section>
 
-    <section class="" id="buttons">
+    <section class="section" id="grid-system">
+        <div class="gt all-col-1-2"></div>
+        <div class="gt all-col-1-2"></div>
+
+        <div class="gt all-col-1-3"></div>
+        <div class="gt all-col-1-3"></div>
+        <div class="gt all-col-1-3"></div>
+
+        <div class="gt all-col-1-4"></div>
+        <div class="gt all-col-1-4"></div>
+        <div class="gt all-col-1-4"></div>
+        <div class="gt all-col-1-4"></div>
+
+        <div class="gt all-col-1-5"></div>
+        <div class="gt all-col-1-5"></div>
+        <div class="gt all-col-1-5"></div>
+        <div class="gt all-col-1-5"></div>
+        <div class="gt all-col-1-5"></div>
+
+        <div class="gt all-col-1-6"></div>
+        <div class="gt all-col-1-6"></div>
+        <div class="gt all-col-1-6"></div>
+        <div class="gt all-col-1-6"></div>
+        <div class="gt all-col-1-6"></div>
+        <div class="gt all-col-1-6"></div>
+
     </section>
 
-    <div class="all-col-1-3">
-    </div>
-    <div class="all-col-1-3">
-    </div>
-    <div class="all-col-1-3">
-    </div>
+    <section class="section" id="utilities">
+        <pre><code>
+&lt;html class="phone"&gt;                html.phone {}
+&lt;html class="phone portrait"&gt;       html.phone.portrait {}
+&lt;html class="phone landscape"&gt;      html.phone.landscape {}
+&lt;html class="tablet"&gt;               html.tablet {}
+&lt;html class="tablet portrait"&gt;      html.tablet.portrait {}
+&lt;html class="tablet landscape"&gt;     html.tablet.landscape {}
+&lt;html class="laptop"&gt;               html.laptop {}
+&lt;html class="desktop"&gt;              html.desktop {}
+      </code></pre>
+    </section>
 
-
-    <script src="js/colymn.min.js"></script>
+    <script src="js/colymn.js"></script>
     <script>
         colymn();
     </script>
